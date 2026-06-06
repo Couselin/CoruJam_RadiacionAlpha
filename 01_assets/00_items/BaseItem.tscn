@@ -9,10 +9,12 @@ size = Vector2(250, 250)
 [sub_resource type="LabelSettings" id="LabelSettings_n24wn"]
 font_size = 41
 
-[node name="Sprite2D" type="Sprite2D" unique_id=984014417]
+[node name="Node2D" type="Node2D" unique_id=1205351558]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_0w65g")
 script = ExtResource("2_n24wn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1523409278]
+texture = ExtResource("1_0w65g")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=498225321]
 

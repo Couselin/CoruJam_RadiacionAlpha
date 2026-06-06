@@ -1,7 +1,10 @@
-extends Sprite2D
+extends Node2D
+
+class_name Item
 
 var MouseInside: bool
 var Attached: bool
+@export var ItemID: String
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,6 +19,16 @@ func _process(_delta: float) -> void:
 	pass
 
 
+
+
+#Detecta el ratón para 'activar' el input
+func _on_area_2d_mouse_entered() -> void:
+	MouseInside = true
+	pass
+func _on_area_2d_mouse_exited() -> void:
+	MouseInside = false
+	pass 
+#Evento click
 func _input(event):
 	if event.is_action_pressed("Click"):
 		if MouseInside:
@@ -24,11 +37,7 @@ func _input(event):
 			else:
 				Attached=false
 
-func _on_area_2d_mouse_entered() -> void:
-	MouseInside = true
-	pass # Replace with function body.
 
-
-func _on_area_2d_mouse_exited() -> void:
-	MouseInside = false
-	pass # Replace with function body.
+func positionate(givenPosition):
+	global_position = givenPosition
+	pass

@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://g38b6kn20ffu"]
 
 [ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
-[ext_resource type="Texture2D" uid="uid://b8v8mjay1hkij" path="res://01_assets/00_items/sprites/paceholders/amarillo.png" id="1_26b2s"]
-[ext_resource type="Texture2D" uid="uid://hnhhtkccqo4j" path="res://01_assets/00_items/sprites/paceholders/azul.png" id="2_7rbd1"]
 [ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
-[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="3_5ep5v"]
-[ext_resource type="Texture2D" uid="uid://jd3nbfykoftj" path="res://01_assets/00_items/sprites/paceholders/rojo.png" id="3_b7ysp"]
+[ext_resource type="PackedScene" uid="uid://d2masijdykeuq" path="res://01_assets/00_items/itemsPrueba/itemAmarillo.tscn" id="4_b7ysp"]
+[ext_resource type="PackedScene" uid="uid://cpk1gg770cr2c" path="res://01_assets/00_items/itemsPrueba/itemAzul.tscn" id="5_t6w3n"]
+[ext_resource type="PackedScene" uid="uid://cawo6ubjilmhu" path="res://01_assets/00_items/itemsPrueba/itemRojo.tscn" id="6_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
 
 [node name="Node2D" type="Node2D" unique_id=815484022]
@@ -15,22 +14,25 @@ script = ExtResource("1_7rbd1")
 anchor_mode = 0
 
 [node name="Slot01" parent="." unique_id=1568521583 instance=ExtResource("2_t6w3n")]
-position = Vector2(147, 195)
+position = Vector2(125, 247)
 
 [node name="Slot02" parent="." unique_id=1704264881 instance=ExtResource("2_t6w3n")]
-position = Vector2(146, 366)
+position = Vector2(126, 382)
 
-[node name="Amarillo" parent="." unique_id=984014417 instance=ExtResource("3_5ep5v")]
-position = Vector2(396, 200)
-texture = ExtResource("1_26b2s")
+[node name="ResultSlot" parent="." unique_id=2036309795 node_paths=PackedStringArray("Slot01", "Slot02", "mainScene") instance=ExtResource("7_mpmdo")]
+position = Vector2(128, 518)
+Slot01 = NodePath("../Slot01")
+Slot02 = NodePath("../Slot02")
+mainScene = NodePath("..")
 
-[node name="Rojo" parent="." unique_id=1791466818 instance=ExtResource("3_5ep5v")]
-position = Vector2(501, 200)
-texture = ExtResource("3_b7ysp")
+[node name="amarillo" parent="." unique_id=1205351558 instance=ExtResource("4_b7ysp")]
+position = Vector2(363, 176)
+ItemID = "amarillo"
 
-[node name="Azul" parent="." unique_id=1651230448 instance=ExtResource("3_5ep5v")]
-position = Vector2(603, 200)
-texture = ExtResource("2_7rbd1")
+[node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
+position = Vector2(511, 245)
+ItemID = "azul"
 
-[node name="ResultSlot" parent="." unique_id=2036309795 instance=ExtResource("7_mpmdo")]
-position = Vector2(148, 550)
+[node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
+position = Vector2(686, 215)
+ItemID = "rojo"

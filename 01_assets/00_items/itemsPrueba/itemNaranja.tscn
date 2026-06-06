@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://duk8jb26t4l1a"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_akupo"]
+[ext_resource type="Texture2D" uid="uid://bwx3uwu38qcm8" path="res://01_assets/00_items/sprites/paceholders/naranja.png" id="2_34fys"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_akupo")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1523409278]
+texture = ExtResource("2_34fys")
+
+[node name="Label" parent="." index="2" unique_id=1762378189]
+offset_left = -44.0
+offset_top = 60.0
+offset_right = 115.0
+offset_bottom = 117.0
+text = "Naranja"
