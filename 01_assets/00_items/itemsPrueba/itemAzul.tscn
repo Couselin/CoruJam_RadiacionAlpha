@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cpk1gg770cr2c"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_k15ru"]
+[ext_resource type="Texture2D" uid="uid://hnhhtkccqo4j" path="res://01_assets/00_items/sprites/paceholders/azul.png" id="2_ii6bx"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_k15ru")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1523409278]
+texture = ExtResource("2_ii6bx")
+
+[node name="Label" parent="." index="2" unique_id=1762378189]
+offset_left = 24.0
+offset_top = 64.0
+offset_right = 127.0
+offset_bottom = 121.0
+text = "Azul"
