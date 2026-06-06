@@ -3,15 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://c7rpcdo3lmk8i" path="res://01_assets/00_items/sprites/paceholders/slotResult.png" id="1_765tr"]
 [ext_resource type="Script" uid="uid://ckj20258vq33y" path="res://01_assets/01_ui/final_product_slot.gd" id="2_3wvr4"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wvr4"]
-size = Vector2(250, 250)
-
-[node name="Sprite2D" type="Sprite2D" unique_id=2036309795]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_765tr")
+[node name="Node2D" type="Node2D" unique_id=905596898]
+scale = Vector2(0.4, 0.4)
 script = ExtResource("2_3wvr4")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1179518798]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1547670996]
-shape = SubResource("RectangleShape2D_3wvr4")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=44366636]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_765tr")
