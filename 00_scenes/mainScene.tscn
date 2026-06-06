@@ -3,9 +3,10 @@
 [ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
 [ext_resource type="Texture2D" uid="uid://b8v8mjay1hkij" path="res://01_assets/00_items/sprites/paceholders/amarillo.png" id="1_26b2s"]
 [ext_resource type="Texture2D" uid="uid://hnhhtkccqo4j" path="res://01_assets/00_items/sprites/paceholders/azul.png" id="2_7rbd1"]
+[ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
 [ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="3_5ep5v"]
 [ext_resource type="Texture2D" uid="uid://jd3nbfykoftj" path="res://01_assets/00_items/sprites/paceholders/rojo.png" id="3_b7ysp"]
-[ext_resource type="Texture2D" uid="uid://cc0an5pxcu7o1" path="res://01_assets/00_items/sprites/paceholders/slot.png" id="4_t6w3n"]
+[ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
 
 [node name="Node2D" type="Node2D" unique_id=815484022]
 script = ExtResource("1_7rbd1")
@@ -13,20 +14,11 @@ script = ExtResource("1_7rbd1")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1083897180]
 anchor_mode = 0
 
-[node name="Slot01" type="Sprite2D" parent="." unique_id=1224590740]
-position = Vector2(100, 100)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("4_t6w3n")
+[node name="Slot01" parent="." unique_id=1568521583 instance=ExtResource("2_t6w3n")]
+position = Vector2(147, 195)
 
-[node name="Slot02" type="Sprite2D" parent="." unique_id=1954802482]
-position = Vector2(100, 300)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("4_t6w3n")
-
-[node name="Slot03" type="Sprite2D" parent="." unique_id=396900847]
-position = Vector2(100, 500)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("4_t6w3n")
+[node name="Slot02" parent="." unique_id=1704264881 instance=ExtResource("2_t6w3n")]
+position = Vector2(146, 366)
 
 [node name="Amarillo" parent="." unique_id=984014417 instance=ExtResource("3_5ep5v")]
 position = Vector2(396, 200)
@@ -39,3 +31,6 @@ texture = ExtResource("3_b7ysp")
 [node name="Azul" parent="." unique_id=1651230448 instance=ExtResource("3_5ep5v")]
 position = Vector2(603, 200)
 texture = ExtResource("2_7rbd1")
+
+[node name="ResultSlot" parent="." unique_id=2036309795 instance=ExtResource("7_mpmdo")]
+position = Vector2(148, 550)
