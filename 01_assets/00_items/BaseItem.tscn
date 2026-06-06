@@ -6,6 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n24wn"]
 size = Vector2(250, 250)
 
+[sub_resource type="LabelSettings" id="LabelSettings_n24wn"]
+font_size = 41
+
 [node name="Sprite2D" type="Sprite2D" unique_id=984014417]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_0w65g")
@@ -15,6 +18,14 @@ script = ExtResource("2_n24wn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1265075669]
 shape = SubResource("RectangleShape2D_n24wn")
+
+[node name="Label" type="Label" parent="." unique_id=1762378189]
+offset_left = 4.0
+offset_top = 56.0
+offset_right = 107.0
+offset_bottom = 113.0
+text = "Cubo"
+label_settings = SubResource("LabelSettings_n24wn")
 
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
