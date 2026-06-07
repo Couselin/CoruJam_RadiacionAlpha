@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2masijdykeuq"]
 
 [ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_dg11t"]
-[ext_resource type="Texture2D" uid="uid://b8v8mjay1hkij" path="res://01_assets/00_items/sprites/paceholders/amarillo.png" id="2_2bvdk"]
+[ext_resource type="Texture2D" uid="uid://b8v8mjay1hkij" path="res://01_assets/00_items/sprites/99_paceholders/amarillo.png" id="2_2bvdk"]
 
 [node name="Node2D" unique_id=1205351558 instance=ExtResource("1_dg11t")]
 

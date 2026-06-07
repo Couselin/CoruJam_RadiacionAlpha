@@ -19,7 +19,7 @@ func _ready() -> void:
 	cambiarDialogo("holiii")
 	
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	siguienteDialogo()
 
 func animate_label() -> void:
