@@ -40,6 +40,13 @@ linear_accel_curve = SubResource("CurveTexture_mhujl")
 scale_curve = SubResource("CurveTexture_3nvxs")
 color_ramp = SubResource("GradientTexture1D_5ypvl")
 
+[sub_resource type="Gradient" id="Gradient_abc4v"]
+offsets = PackedFloat32Array(0.009868421, 0.39802632, 0.6940789, 0.9572368)
+colors = PackedColorArray(0.4529708, 0.054492712, 0.063167736, 1, 0.9171394, 0.3469389, 0.13960782, 1, 0.92231196, 0.641787, 0.3188152, 1, 0.9990482, 0.8610361, 0.67728573, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mjyrc"]
+gradient = SubResource("Gradient_abc4v")
+
 [sub_resource type="Curve" id="Curve_qaweh"]
 _limits = [0.0, 3.0, 0.0, 1.0]
 _data = [Vector2(0, 3), 0.0, 0.0, 0, 0, Vector2(0.109004736, 0.5570471), 0.0, 0.0, 0, 0, Vector2(0.9905214, 0.50335574), 0.0, 0.0, 0, 0]
@@ -70,12 +77,12 @@ linear_accel_curve = SubResource("CurveTexture_6t10y")
 scale_min = 0.0
 scale_max = 2.5
 scale_curve = SubResource("CurveTexture_6wkup")
+color_ramp = SubResource("GradientTexture1D_mjyrc")
 
 [node name="Explosion" type="Node2D" unique_id=1431843519]
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=775402178]
 material = SubResource("CanvasItemMaterial_abc4v")
-emitting = false
 amount = 200
 lifetime = 0.5
 explosiveness = 0.5
