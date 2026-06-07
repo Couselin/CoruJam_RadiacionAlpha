@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://wjx64atlqmox" path="res://01_assets/03_dialogos/dialogoBasic.gd" id="1_nux56"]
 [ext_resource type="LabelSettings" uid="uid://c4j8djbkn4tii" path="res://01_assets/01_ui/01_tipogafia/TextoNombre.tres" id="2_gs406"]
-[ext_resource type="LabelSettings" uid="uid://cn7ww6k6nuif1" path="res://01_assets/01_ui/01_tipogafia/TextoDialogos.tres" id="3_gs406"]
 
 [node name="Control" type="Control" unique_id=1773824511]
 layout_mode = 3
@@ -29,7 +28,7 @@ offset_top = 26.0
 offset_right = 564.0
 offset_bottom = 101.0
 text = "¿Eh, hola? ¿Se encuentra alguien ahí? ¡Oh, buen señor, alabado sea! Mire, realmente preciso de su ayuda. Un enano muy alto me retó a mirar al sol, ¡ese canalla sabía que mi vista empeoraría y  robó todas mis manzas! Por favor, necesito algo que me ayude a ver mejor ¿Un hechizo pueda ser?"
-label_settings = ExtResource("3_gs406")
+label_settings = ExtResource("2_gs406")
 autowrap_mode = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=855158881]
