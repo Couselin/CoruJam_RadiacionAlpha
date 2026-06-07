@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c66kretoolt7m"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_155gk"]
+[ext_resource type="Texture2D" uid="uid://clxkdbknqojqf" path="res://01_assets/00_items/sprites/JAM_pr_cup.png" id="2_155gk"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_155gk")]
+ItemID = 12
+ItemImage = ExtResource("2_155gk")
+Texto = "Vaso"

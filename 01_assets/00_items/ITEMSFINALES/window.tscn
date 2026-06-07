@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bw2jydqsxdgn0"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_jurvb"]
+[ext_resource type="Texture2D" uid="uid://d0xrrlxww4oin" path="res://01_assets/00_items/sprites/JAM_pr_window.png" id="2_afrba"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_jurvb")]
+ItemID = 28
+ItemImage = ExtResource("2_afrba")
+Texto = "Ventana"

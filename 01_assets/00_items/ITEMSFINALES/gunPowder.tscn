@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cunxpn5jn03po"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_r0vcx"]
+[ext_resource type="Texture2D" uid="uid://d28oh71470aj5" path="res://01_assets/00_items/sprites/JAM_pr_gunpowder.png" id="2_r8mw6"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_r0vcx")]
+ItemID = 18
+ItemImage = ExtResource("2_r8mw6")
+Texto = "Pólvora"

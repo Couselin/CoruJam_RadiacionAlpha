@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cpsdu403f5i"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_qr1p2"]
+[ext_resource type="Texture2D" uid="uid://d0l2nlv4sstqb" path="res://01_assets/00_items/sprites/JAM_pr_waterGlass.png" id="2_2crm7"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_qr1p2")]
+ItemID = 13
+ItemImage = ExtResource("2_2crm7")
+Texto = "Vaso con agua"

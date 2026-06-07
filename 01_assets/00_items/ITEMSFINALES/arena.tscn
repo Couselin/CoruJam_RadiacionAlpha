@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://08mciayfrba3"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_rpqql"]
+[ext_resource type="Texture2D" uid="uid://dcso5n1yyv5qh" path="res://01_assets/00_items/sprites/JAM_pr_sand.png" id="2_6yfhd"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_rpqql")]
+ItemID = 10
+ItemImage = ExtResource("2_6yfhd")
+Texto = "Arena"

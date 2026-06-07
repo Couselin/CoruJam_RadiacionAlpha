@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bamw0ogq82g16"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_h4gq7"]
+[ext_resource type="Texture2D" uid="uid://1rir6pxg6sum" path="res://01_assets/00_items/sprites/JAM_pr_steel.png" id="2_r3r6l"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_h4gq7")]
+ItemID = 17
+ItemImage = ExtResource("2_r3r6l")
+Texto = "Metal"

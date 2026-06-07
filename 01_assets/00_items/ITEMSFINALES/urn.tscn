@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://df8kogj3hg1he"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_nw1iu"]
+[ext_resource type="Texture2D" uid="uid://06wuyx4y1v13" path="res://01_assets/00_items/sprites/JAM_pr_urn.png" id="2_yoxx8"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_nw1iu")]
+ItemID = 26
+ItemImage = ExtResource("2_yoxx8")
+Texto = "Urna"

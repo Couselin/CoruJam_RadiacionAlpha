@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqrde2ccr0fdq"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_h2hba"]
+[ext_resource type="Texture2D" uid="uid://cxx8e3utyvaop" path="res://01_assets/00_items/sprites/JAM_pr_ash.png" id="2_gqfy7"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_h2hba")]
+ItemID = 5
+ItemImage = ExtResource("2_gqfy7")
+Texto = "Ceniza"

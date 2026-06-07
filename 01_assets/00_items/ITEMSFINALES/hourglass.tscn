@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bccgfuh73xyax"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_3yu44"]
+[ext_resource type="Texture2D" uid="uid://100mc8vyhf5r" path="res://01_assets/00_items/sprites/JAM_pr_hourglass.png" id="2_jnq3a"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_3yu44")]
+ItemID = 25
+ItemImage = ExtResource("2_jnq3a")
+Texto = "Reloj de arena"

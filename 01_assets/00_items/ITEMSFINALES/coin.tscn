@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bcf610ijk06pm"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_glhvu"]
+[ext_resource type="Texture2D" uid="uid://byrds4gpam5wn" path="res://01_assets/00_items/sprites/JAM_pr_coin.png" id="2_x1y5g"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_glhvu")]
+ItemID = 14
+ItemImage = ExtResource("2_x1y5g")
+Texto = "Moneda"
