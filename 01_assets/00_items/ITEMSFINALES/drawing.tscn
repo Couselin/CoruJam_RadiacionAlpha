@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b7xp5w84ha4ia"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_e0tyu"]
+[ext_resource type="Texture2D" uid="uid://88n3dmjn2ic4" path="res://01_assets/00_items/sprites/JAM_pr_drawing.png" id="2_lxi4g"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_e0tyu")]
+ItemID = 27
+ItemImage = ExtResource("2_lxi4g")
+Texto = "Dibujo"

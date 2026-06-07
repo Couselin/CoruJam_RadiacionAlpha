@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b4iqv4pxgmixu"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_jhbhr"]
+[ext_resource type="Texture2D" uid="uid://cgi4rmnud6bi3" path="res://01_assets/00_items/sprites/JAM_pr_bomb.png" id="2_6j2oq"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_jhbhr")]
+ItemID = 32
+ItemImage = ExtResource("2_6j2oq")
+Texto = "Bomba de humo"

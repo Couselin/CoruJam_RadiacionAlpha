@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cfemikllytim6"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_5eh4u"]
+[ext_resource type="Texture2D" uid="uid://di7c853bv1las" path="res://01_assets/00_items/sprites/JAM_pr_steelBar.png" id="2_y2f2u"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_5eh4u")]
+ItemID = 23
+ItemImage = ExtResource("2_y2f2u")
+Texto = "Lingote"

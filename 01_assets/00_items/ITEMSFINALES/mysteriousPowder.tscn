@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bx7551rrr30so"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_co7wm"]
+[ext_resource type="Texture2D" uid="uid://b8pamc6hxxq04" path="res://01_assets/00_items/sprites/JAM_pr_mysteriousPowder.png" id="2_ht6bc"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_co7wm")]
+ItemID = 20
+ItemImage = ExtResource("2_ht6bc")
+Texto = "Mezcla Sospechosa"
