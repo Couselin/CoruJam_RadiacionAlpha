@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://c4j8djbkn4tii"]
+
+[ext_resource type="FontFile" uid="uid://bomog6cjkvfym" path="res://01_assets/03_dialogos/01_labels/Enchanted Land.otf" id="1_x4rix"]
+
+[resource]
+font = ExtResource("1_x4rix")
+font_size = 23
+font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
