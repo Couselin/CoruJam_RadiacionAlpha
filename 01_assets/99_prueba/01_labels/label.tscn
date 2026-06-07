@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://blwq1leesr3rq"]
+
+[ext_resource type="Script" uid="uid://wjx64atlqmox" path="res://01_assets/99_prueba/01_labels/dialogoBasic.gd" id="1_cpjvr"]
+[ext_resource type="LabelSettings" uid="uid://cyj8nkf23ux5k" path="res://01_assets/01_ui/01_tipogafia/TextoObjetos.tres" id="1_rx7wa"]
+
+[node name="Control" type="Control" unique_id=1773824511]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 20.0
+script = ExtResource("1_cpjvr")
+nombre = "antonio"
+dialogo = "Hola me llamo antonio"
+
+[node name="LabelNombre" type="Label" parent="." unique_id=1254500273]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 33.0
+offset_bottom = 20.0
+label_settings = ExtResource("1_rx7wa")
+
+[node name="LabelDialogo" type="Label" parent="." unique_id=69308976]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 40.0
+offset_bottom = 55.0
+label_settings = ExtResource("1_rx7wa")
+
+[node name="Timer" type="Timer" parent="." unique_id=855158881]
+wait_time = 0.1
