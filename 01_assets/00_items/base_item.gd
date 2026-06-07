@@ -4,11 +4,18 @@ class_name Item
 
 var MouseInside: bool
 var Attached: bool
-@export var ItemID: String
+@export var ItemID: int
 var JustDesattached: bool =false
+@export var ItemImage: Texture
+@export var Texto: String
 
+#Referencias
+@export var MySprite: Sprite2D
+@export var MyLabel: Label
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	MyLabel.text = Texto
+	MySprite.texture = ItemImage
 	pass # Replace with function body.
 
 
