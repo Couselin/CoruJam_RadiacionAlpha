@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cxqp4anx7n834"]
+
+[ext_resource type="Script" uid="uid://bqvys1me2jixx" path="res://01_assets/02_characters/character.gd" id="1_5l5l5"]
+[ext_resource type="Texture2D" uid="uid://dxt0gmnu6ltun" path="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada01.png" id="2_3g00j"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=435411583]
+script = ExtResource("1_5l5l5")
+sprite = ExtResource("2_3g00j")
