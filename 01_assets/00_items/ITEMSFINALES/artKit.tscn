@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bjqyueghy8thl"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_squnh"]
+[ext_resource type="Texture2D" uid="uid://dgrbc3ln6oxrs" path="res://01_assets/00_items/sprites/JAM_pr_artKit.png" id="2_ls4be"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_squnh")]
+ItemID = 29
+ItemImage = ExtResource("2_ls4be")
+Texto = "Kit de dibujo"
