@@ -1,11 +1,22 @@
 extends Node2D
 
+@export var DeliverySlot: BasicSlot
 
-# Called when the node enters the scene tree for the first time.
+
+# BEGIN PLAY
 func _ready() -> void:
-	pass # Replace with function body.
+	DeliverySlot.itemOnSlot.connect(checkDelivery)
+	pass 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# EVENT TICK
 func _process(_delta: float) -> void:
 	pass
+
+
+#Detectar pedido correcto
+func checkDelivery():
+	if !DeliverySlot.SlotEmpty:
+		if DeliverySlot.ItemReference.ItemID == "azul":
+			print("item correcto")
+			pass

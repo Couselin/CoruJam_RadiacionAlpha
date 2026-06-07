@@ -8,8 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://cawo6ubjilmhu" path="res://01_assets/00_items/itemsPrueba/itemRojo.tscn" id="6_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
 
-[node name="Node2D" type="Node2D" unique_id=815484022]
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot")]
 script = ExtResource("1_7rbd1")
+DeliverySlot = NodePath("DeliverySlot")
 
 [node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
 scale = Vector2(0.6, 0.6)
@@ -27,6 +28,10 @@ scale = Vector2(0.3, 0.3)
 position = Vector2(67, 439.465)
 scale = Vector2(0.3, 0.3)
 
+[node name="DeliverySlot" parent="." unique_id=171514903 instance=ExtResource("2_t6w3n")]
+position = Vector2(1055, 63)
+scale = Vector2(0.75, 0.5)
+
 [node name="ResultSlot" parent="." unique_id=2036309795 node_paths=PackedStringArray("Slot01", "Slot02", "mainScene") instance=ExtResource("7_mpmdo")]
 position = Vector2(67, 581)
 scale = Vector2(0.3, 0.3)
@@ -36,12 +41,9 @@ mainScene = NodePath("..")
 
 [node name="amarillo" parent="." unique_id=1205351558 instance=ExtResource("4_b7ysp")]
 position = Vector2(385, 317)
-ItemID = "amarillo"
 
 [node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
 position = Vector2(533, 386)
-ItemID = "azul"
 
 [node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
 position = Vector2(708, 356)
-ItemID = "rojo"

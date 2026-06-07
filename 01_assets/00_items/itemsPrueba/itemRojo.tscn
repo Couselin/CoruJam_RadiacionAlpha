@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://jd3nbfykoftj" path="res://01_assets/00_items/sprites/99_paceholders/rojo.png" id="2_b1mrg"]
 
 [node name="Node2D" unique_id=1205351558 instance=ExtResource("1_ksem1")]
+ItemID = "rojo"
 
 [node name="Sprite2D" parent="." index="0" unique_id=1523409278]
 texture = ExtResource("2_b1mrg")
