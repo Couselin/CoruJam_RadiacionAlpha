@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" format=3 uid="uid://cyj8nkf23ux5k"]
 
-[ext_resource type="FontFile" uid="uid://bomog6cjkvfym" path="res://01_assets/99_prueba/01_labels/Enchanted Land.otf" id="1_h0c1x"]
+[ext_resource type="FontFile" uid="uid://bomog6cjkvfym" path="res://01_assets/03_dialogos/01_labels/Enchanted Land.otf" id="1_h0c1x"]
 
 [resource]
 font = ExtResource("1_h0c1x")

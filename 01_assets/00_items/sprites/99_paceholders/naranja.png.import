@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0a4s6kwuf3qj"
-path="res://.godot/imported/dardo.jpeg-7597b2adde8dfe1c1d520fb095b2befe.ctex"
+uid="uid://bwx3uwu38qcm8"
+path="res://.godot/imported/naranja.png-83cc162c44d0795e5c5ae4996e678880.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/dardo.jpeg"
-dest_files=["res://.godot/imported/dardo.jpeg-7597b2adde8dfe1c1d520fb095b2befe.ctex"]
+source_file="res://01_assets/00_items/sprites/99_paceholders/naranja.png"
+dest_files=["res://.godot/imported/naranja.png-83cc162c44d0795e5c5ae4996e678880.ctex"]
 
 [params]
 

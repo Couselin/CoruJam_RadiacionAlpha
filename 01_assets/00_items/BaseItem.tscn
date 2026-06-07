@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvltfdm3txtlc"]
 
-[ext_resource type="Texture2D" uid="uid://dn1t6ji1lf2lg" path="res://01_assets/00_items/sprites/paceholders/cubo.png" id="1_0w65g"]
+[ext_resource type="Texture2D" uid="uid://dn1t6ji1lf2lg" path="res://01_assets/00_items/sprites/99_paceholders/cubo.png" id="1_0w65g"]
 [ext_resource type="Script" uid="uid://clegosvnagx5r" path="res://01_assets/00_items/base_item.gd" id="2_n24wn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n24wn"]

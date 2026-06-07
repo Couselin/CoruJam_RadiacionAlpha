@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://g38b6kn20ffu"]
 
 [ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
+[ext_resource type="Texture2D" uid="uid://cid3s54avsqd0" path="res://01_assets/01_ui/JAM_UI01_placeholder1.png" id="2_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
 [ext_resource type="PackedScene" uid="uid://d2masijdykeuq" path="res://01_assets/00_items/itemsPrueba/itemAmarillo.tscn" id="4_b7ysp"]
 [ext_resource type="PackedScene" uid="uid://cpk1gg770cr2c" path="res://01_assets/00_items/itemsPrueba/itemAzul.tscn" id="5_t6w3n"]
@@ -10,29 +11,37 @@
 [node name="Node2D" type="Node2D" unique_id=815484022]
 script = ExtResource("1_7rbd1")
 
+[node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_mpmdo")
+centered = false
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1083897180]
 anchor_mode = 0
 
 [node name="Slot01" parent="." unique_id=1568521583 instance=ExtResource("2_t6w3n")]
-position = Vector2(125, 247)
+position = Vector2(67, 296.69)
+scale = Vector2(0.3, 0.3)
 
 [node name="Slot02" parent="." unique_id=1704264881 instance=ExtResource("2_t6w3n")]
-position = Vector2(126, 382)
+position = Vector2(67, 439.465)
+scale = Vector2(0.3, 0.3)
 
 [node name="ResultSlot" parent="." unique_id=2036309795 node_paths=PackedStringArray("Slot01", "Slot02", "mainScene") instance=ExtResource("7_mpmdo")]
-position = Vector2(128, 518)
+position = Vector2(67, 581)
+scale = Vector2(0.3, 0.3)
 Slot01 = NodePath("../Slot01")
 Slot02 = NodePath("../Slot02")
 mainScene = NodePath("..")
 
 [node name="amarillo" parent="." unique_id=1205351558 instance=ExtResource("4_b7ysp")]
-position = Vector2(363, 176)
+position = Vector2(385, 317)
 ItemID = "amarillo"
 
 [node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
-position = Vector2(511, 245)
+position = Vector2(533, 386)
 ItemID = "azul"
 
 [node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
-position = Vector2(686, 215)
+position = Vector2(708, 356)
 ItemID = "rojo"

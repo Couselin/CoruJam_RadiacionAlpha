@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7rpcdo3lmk8i"
-path="res://.godot/imported/slotResult.png-22c2c9293002b6fa809f017571952ac3.ctex"
+uid="uid://c0a4s6kwuf3qj"
+path="res://.godot/imported/dardo.jpeg-1a719ecce3093e2f623470b72d26fab2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/slotResult.png"
-dest_files=["res://.godot/imported/slotResult.png-22c2c9293002b6fa809f017571952ac3.ctex"]
+source_file="res://01_assets/00_items/sprites/99_paceholders/dardo.jpeg"
+dest_files=["res://.godot/imported/dardo.jpeg-1a719ecce3093e2f623470b72d26fab2.ctex"]
 
 [params]
 
