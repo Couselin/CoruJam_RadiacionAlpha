@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://pcij8btnfki"]
+
+[ext_resource type="Script" uid="uid://ciyomr4woenab" path="res://01_assets/00_items/scroll_item.gd" id="1_rsx0c"]
+[ext_resource type="LabelSettings" uid="uid://cyj8nkf23ux5k" path="res://01_assets/01_ui/01_tipogafia/TextoObjetos.tres" id="2_rsx0c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n24wn"]
+size = Vector2(95, 95)
+
+[node name="Node2D" type="TextureRect" unique_id=388118148 node_paths=PackedStringArray("MyLabel")]
+offset_right = 95.0
+offset_bottom = 95.0
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_rsx0c")
+MyLabel = NodePath("Label")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=498225321]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1265075669]
+position = Vector2(47.5, 47.5)
+shape = SubResource("RectangleShape2D_n24wn")
+
+[node name="Label" type="Label" parent="." unique_id=1762378189]
+layout_mode = 1
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 92.0
+offset_bottom = 114.0
+label_settings = ExtResource("2_rsx0c")
+horizontal_alignment = 2
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

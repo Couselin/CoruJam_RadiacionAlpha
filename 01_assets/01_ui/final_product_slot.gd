@@ -7,6 +7,7 @@ class_name ResultSlot
 @export var result: Item 
 @export var mainScene: Node2D
 
+signal nuevoItem
 # BEGIN PLAY
 func _ready() -> void:
 	Slot01.itemOnSlot.connect(checkForCombine)
@@ -24,8 +25,9 @@ func checkForCombine():
 		pass
 	else:
 		print("checking")
-		if (Slot01.ItemReference.ItemID == "amarillo" and Slot02.ItemReference.ItemID == "rojo")or(Slot01.ItemReference.ItemID == "rojo" and Slot02.ItemReference.ItemID == "amarillo"):
+		if (Slot01.ItemReference.ItemID == 1 and Slot02.ItemReference.ItemID == 2)or(Slot01.ItemReference.ItemID == 2 and Slot02.ItemReference.ItemID == 1):
 			print("naranja")
 			result= preload("res://01_assets/00_items/itemsPrueba/itemNaranja.tscn").instantiate()
 			mainScene.add_child(result)
 			result.global_position = global_position
+			emit_signal("nuevoItem")
