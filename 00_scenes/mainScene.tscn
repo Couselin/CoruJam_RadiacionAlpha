@@ -7,10 +7,14 @@
 [ext_resource type="PackedScene" uid="uid://cpk1gg770cr2c" path="res://01_assets/00_items/itemsPrueba/itemAzul.tscn" id="5_t6w3n"]
 [ext_resource type="PackedScene" uid="uid://cawo6ubjilmhu" path="res://01_assets/00_items/itemsPrueba/itemRojo.tscn" id="6_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://cxqp4anx7n834" path="res://01_assets/02_characters/character.tscn" id="8_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://blwq1leesr3rq" path="res://01_assets/03_dialogos/Dialogue.tscn" id="9_eltik"]
 
-[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot")]
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "character", "cajaDialogos")]
 script = ExtResource("1_7rbd1")
 DeliverySlot = NodePath("DeliverySlot")
+character = NodePath("Character")
+cajaDialogos = NodePath("Control")
 
 [node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
 scale = Vector2(0.6, 0.6)
@@ -47,3 +51,12 @@ position = Vector2(533, 386)
 
 [node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
 position = Vector2(708, 356)
+
+[node name="Character" parent="." unique_id=435411583 instance=ExtResource("8_mpmdo")]
+position = Vector2(93, 100)
+
+[node name="Control" parent="." unique_id=1773824511 instance=ExtResource("9_eltik")]
+offset_left = 300.0
+offset_top = 21.98
+offset_right = 877.0
+offset_bottom = 121.979996
