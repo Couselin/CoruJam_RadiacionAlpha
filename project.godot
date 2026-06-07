@@ -27,6 +27,11 @@ Click={
 ]
 }
 
+[internationalization]
+
+rendering/size/viewport_height=648
+rendering/size/viewport_width=1152
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

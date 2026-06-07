@@ -1,7 +1,9 @@
 extends Control
 
+class_name DialogoBasic
+
 @onready var label_nombre: Label = $LabelNombre
-@onready var timer: Timer = $Timer
+@onready var timerD: Timer = $Timer
 @onready var label_dialogo: Label = $LabelDialogo
 
 @export var nombre: String = "null"
@@ -11,32 +13,18 @@ var n = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	timer.timeout.connect(animate_label)
-	
-	textoNombre()
-	textoDialogo()
-	animate_label()
-	cambiarDialogo("holiii")
-	
-	
+	timerD.timeout.connect(animate_label)
+
+
 func _process(_delta: float) -> void:
-	siguienteDialogo()
+	pass
 
 func animate_label() -> void:
 	label_dialogo.visible_characters +=1
-	
-	timer.start()
-	
-func textoNombre() -> void: 
-	label_nombre.text = nombre
-	
-func textoDialogo() -> void: 
-	label_dialogo.text = dialogo
-	
+	timerD.start()
+
 func cambiarDialogo(nuevoDialogo) -> void:
 	label_dialogo.text = nuevoDialogo
-	
 
-func siguienteDialogo() -> void:
-	if n == 1: 
-		cambiarDialogo("holiii")
+func cambiarNombre(nuevoNombre) -> void:
+	label_nombre.text = nuevoNombre
