@@ -18,14 +18,18 @@ offset_left = 1.0
 offset_top = 1.0
 offset_right = 33.0
 offset_bottom = 20.0
+text = "Nombre"
 label_settings = ExtResource("2_awt3o")
 
 [node name="LabelDialogo" type="Label" parent="." unique_id=69308976]
 layout_mode = 0
+offset_left = 15.0
 offset_top = 32.0
-offset_right = 40.0
-offset_bottom = 55.0
+offset_right = 565.0
+offset_bottom = 95.0
+text = "Lorem ipsum dbajkhvidslvbejkvbdjkhvisuebjvbskcxhvsiucbdjhkjsvbjkbfdsjgvcjsbhjhdgsubsdjsvgsjbfdgvbjsfvxcbvhjsf ufh dkjfiuagf sfagsdf afgwfgcfzd fafaigfsjx faf div sf sf fsdif "
 label_settings = ExtResource("2_awt3o")
+autowrap_mode = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=855158881]
-wait_time = 0.1
+wait_time = 0.025
