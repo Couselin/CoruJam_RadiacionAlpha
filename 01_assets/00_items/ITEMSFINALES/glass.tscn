@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://btvv5saw41q0o"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_f4vo0"]
+[ext_resource type="Texture2D" uid="uid://bj3knbsl0v8om" path="res://01_assets/00_items/sprites/JAM_pr_glass.png" id="2_72kut"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_f4vo0")]
+ItemID = 11
+ItemImage = ExtResource("2_72kut")
+Texto = "Cristal"

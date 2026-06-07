@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cih8pjsapi4q8"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_y8t0p"]
+[ext_resource type="Texture2D" uid="uid://bbtly1uh7koga" path="res://01_assets/00_items/sprites/JAM_pr_clay.png" id="2_xx3f6"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_y8t0p")]
+ItemID = 21
+ItemImage = ExtResource("2_xx3f6")
+Texto = "Arcilla"

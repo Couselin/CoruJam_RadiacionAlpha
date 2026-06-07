@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dhvp072ll1545"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_jvc4j"]
+[ext_resource type="Texture2D" uid="uid://qhv4ikbcn1td" path="res://01_assets/00_items/sprites/JAM_pr_hammer.png" id="2_lw6n3"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_jvc4j")]
+ItemID = 4
+ItemImage = ExtResource("2_lw6n3")
+Texto = "Martillo"

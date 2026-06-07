@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cf415wqqnme52"]
+
+[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="1_w48li"]
+[ext_resource type="Texture2D" uid="uid://cqw1wkovv5bmn" path="res://01_assets/00_items/sprites/JAM_pr_coal.png" id="2_qdm87"]
+
+[node name="Node2D" unique_id=1205351558 instance=ExtResource("1_w48li")]
+ItemID = 7
+ItemImage = ExtResource("2_qdm87")
+Texto = "Carbón"
