@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsivdfeeirtvv"
-path="res://.godot/imported/JAM_señoraMayor.png-eff982443e6b60955496c65ab7850381.ctex"
+uid="uid://divqqpwug2n4k"
+path="res://.godot/imported/JAM_señorInquisicion01.png-2f4cb1a69069773912ed9a4057935b29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/02_characters/01_images/02_señoraMayor/JAM_señoraMayor.png"
-dest_files=["res://.godot/imported/JAM_señoraMayor.png-eff982443e6b60955496c65ab7850381.ctex"]
+source_file="res://01_assets/02_characters/01_images/08_señorInquisicion/JAM_señorInquisicion01.png"
+dest_files=["res://.godot/imported/JAM_señorInquisicion01.png-2f4cb1a69069773912ed9a4057935b29.ctex"]
 
 [params]
 
