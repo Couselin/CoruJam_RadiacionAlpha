@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jd3nbfykoftj"
-path="res://.godot/imported/rojo.png-3c411a0a48f8ba30adfe4b14f9133e88.ctex"
+uid="uid://cc0an5pxcu7o1"
+path="res://.godot/imported/slot.png-73b9dde1541f4c30298cc0e37fb2454d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/rojo.png"
-dest_files=["res://.godot/imported/rojo.png-3c411a0a48f8ba30adfe4b14f9133e88.ctex"]
+source_file="res://01_assets/00_items/sprites/99_paceholders/slot.png"
+dest_files=["res://.godot/imported/slot.png-73b9dde1541f4c30298cc0e37fb2454d.ctex"]
 
 [params]
 

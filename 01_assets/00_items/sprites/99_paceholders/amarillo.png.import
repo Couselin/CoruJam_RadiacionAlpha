@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hnhhtkccqo4j"
-path="res://.godot/imported/azul.png-fd1997971d71d96ae3461c1083b9b0db.ctex"
+uid="uid://b8v8mjay1hkij"
+path="res://.godot/imported/amarillo.png-917be005bed1c2e012645bf459093efa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/azul.png"
-dest_files=["res://.godot/imported/azul.png-fd1997971d71d96ae3461c1083b9b0db.ctex"]
+source_file="res://01_assets/00_items/sprites/99_paceholders/amarillo.png"
+dest_files=["res://.godot/imported/amarillo.png-917be005bed1c2e012645bf459093efa.ctex"]
 
 [params]
 
