@@ -9,13 +9,19 @@
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://cxqp4anx7n834" path="res://01_assets/02_characters/character.tscn" id="8_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://blwq1leesr3rq" path="res://01_assets/03_dialogos/Dialogue.tscn" id="9_eltik"]
-[ext_resource type="Script" uid="uid://dstouxgkuonjt" path="res://01_assets/01_ui/v_box_container_01.gd" id="10_156vq"]
+[ext_resource type="Script" uid="uid://d2sv8d3sssks0" path="res://00_scenes/container.gd" id="10_7e4ef"]
+[ext_resource type="PackedScene" uid="uid://pcij8btnfki" path="res://01_assets/00_items/ScrollItem.tscn" id="11_tqapp"]
+[ext_resource type="Texture2D" uid="uid://5c5ee4fgbm2f" path="res://01_assets/00_items/sprites/99_paceholders/spritemdkfls.png" id="12_b8qro"]
+[ext_resource type="Texture2D" uid="uid://jd3nbfykoftj" path="res://01_assets/00_items/sprites/99_paceholders/rojo.png" id="13_b8qro"]
+[ext_resource type="Texture2D" uid="uid://bwx3uwu38qcm8" path="res://01_assets/00_items/sprites/99_paceholders/naranja.png" id="14_smxyv"]
 
-[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "character", "cajaDialogos")]
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "ProductSlot", "character", "cajaDialogos", "scrollbar")]
 script = ExtResource("1_7rbd1")
 DeliverySlot = NodePath("DeliverySlot")
+ProductSlot = NodePath("ResultSlot")
 character = NodePath("Character")
 cajaDialogos = NodePath("Control")
+scrollbar = NodePath("ScrollContainer01/VBoxContainer01")
 
 [node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
 scale = Vector2(0.6, 0.6)
@@ -46,15 +52,18 @@ mainScene = NodePath("..")
 
 [node name="amarillo" parent="." unique_id=1205351558 instance=ExtResource("4_b7ysp")]
 position = Vector2(385, 317)
-
-[node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
-position = Vector2(533, 386)
+ItemID = 2
 
 [node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
 position = Vector2(708, 356)
+ItemID = 1
 
 [node name="Character" parent="." unique_id=435411583 instance=ExtResource("8_mpmdo")]
 position = Vector2(93, 100)
+
+[node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
+position = Vector2(472, 405)
+ItemID = 0
 
 [node name="Control" parent="." unique_id=1773824511 instance=ExtResource("9_eltik")]
 offset_left = 300.0
@@ -65,11 +74,37 @@ offset_bottom = 121.979996
 [node name="ScrollContainer01" type="ScrollContainer" parent="." unique_id=1940391800]
 offset_left = 1042.0
 offset_top = 169.0
-offset_right = 1149.0
+offset_right = 1137.0
 offset_bottom = 638.0
 
-[node name="VBoxContainer01" type="VBoxContainer" parent="ScrollContainer01" unique_id=354074846]
+[node name="VBoxContainer01" type="VBoxContainer" parent="ScrollContainer01" unique_id=354074846 node_paths=PackedStringArray("MainScene", "SpawnPos", "scrollItems")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("10_156vq")
+script = ExtResource("10_7e4ef")
+MainScene = NodePath("../..")
+SpawnPos = NodePath("../../SpawnPosition")
+scrollItems = [NodePath("Node2D"), NodePath("Node2D2"), null, NodePath("Node2D3")]
+
+[node name="Node2D" parent="ScrollContainer01/VBoxContainer01" unique_id=1488534509 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+expand_mode = 4
+stretch_mode = 5
+Directorio = "res://01_assets/00_items/itemsPrueba/itemAzul.tscn"
+ItemImage = ExtResource("12_b8qro")
+Texto = "MiCubo..."
+
+[node name="Node2D2" parent="ScrollContainer01/VBoxContainer01" unique_id=1030656277 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/itemsPrueba/itemRojo.tscn"
+ItemImage = ExtResource("13_b8qro")
+Texto = "AAA"
+
+[node name="Node2D3" parent="ScrollContainer01/VBoxContainer01" unique_id=388118148 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/itemsPrueba/itemNaranja.tscn"
+ItemImage = ExtResource("14_smxyv")
+Texto = "Naranja"
+
+[node name="SpawnPosition" type="Node2D" parent="." unique_id=767719509]
+position = Vector2(599, 300)
