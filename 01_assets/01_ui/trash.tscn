@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cfx7lioqbj4kg"]
+
+[ext_resource type="Texture2D" uid="uid://c8y0walbwjle6" path="res://01_assets/01_ui/papelera.png" id="1_6jvlk"]
+[ext_resource type="Script" uid="uid://ds7xfvogpxnhs" path="res://01_assets/01_ui/trash.gd" id="1_7x245"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d65t0"]
+size = Vector2(95, 95)
+
+[node name="Sprite2D" type="Sprite2D" unique_id=173330931]
+scale = Vector2(0.085, 0.085)
+texture = ExtResource("1_6jvlk")
+script = ExtResource("1_7x245")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=70413774]
+scale = Vector2(10, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=154279241]
+shape = SubResource("RectangleShape2D_d65t0")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
