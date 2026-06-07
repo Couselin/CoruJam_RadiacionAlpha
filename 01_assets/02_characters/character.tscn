@@ -3,12 +3,30 @@
 [ext_resource type="Script" uid="uid://bqvys1me2jixx" path="res://01_assets/02_characters/character.gd" id="1_5l5l5"]
 [ext_resource type="Texture2D" uid="uid://dxt0gmnu6ltun" path="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada01.png" id="2_3g00j"]
 [ext_resource type="Texture2D" uid="uid://bps1x8egawabo" path="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada02.png" id="3_2tkx6"]
+[ext_resource type="Texture2D" uid="uid://cgjiwhbxo3ow0" path="res://01_assets/02_characters/01_images/01_señorSonriente/JAM_señorSonriente01.png" id="3_o16cg"]
 [ext_resource type="Texture2D" uid="uid://c0a4s6kwuf3qj" path="res://01_assets/00_items/sprites/99_paceholders/dardo.jpeg" id="4_n4qlo"]
+[ext_resource type="Texture2D" uid="uid://dsivdfeeirtvv" path="res://01_assets/02_characters/01_images/02_señoraMayor/JAM_señoraMayor.png" id="4_tgb30"]
+[ext_resource type="Texture2D" uid="uid://d2avkdkqotbf3" path="res://01_assets/02_characters/01_images/03_señorInquisicionIncognito/JAM_señorInquisicionIncognito.png" id="5_hryag"]
+[ext_resource type="Texture2D" uid="uid://ch8s2om6vanen" path="res://01_assets/02_characters/01_images/04_fih/JAM_fih01.png" id="6_67gx2"]
+[ext_resource type="Texture2D" uid="uid://0uhoclwyelx0" path="res://01_assets/02_characters/01_images/04_fih/JAM_fih02.png" id="7_bsku1"]
+[ext_resource type="Texture2D" uid="uid://caei10w3m4ki8" path="res://01_assets/02_characters/01_images/06_rumpell/JAM_rumpell01.png" id="9_0m08n"]
+[ext_resource type="Texture2D" uid="uid://bqdew5ceufi4j" path="res://01_assets/02_characters/01_images/07_elDeLasGafas/JAM_elDeLasGafas01.png" id="10_agb74"]
+[ext_resource type="Texture2D" uid="uid://yl8kvqel0j64" path="res://01_assets/02_characters/01_images/07_elDeLasGafas/JAM_elDeLasGafas02.png" id="11_46b7g"]
+[ext_resource type="Texture2D" uid="uid://sr1bnfcd636a" path="res://01_assets/02_characters/01_images/08_señorInquisicion/JAM_señorInquisicion.png" id="12_oxlpo"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=435411583]
 scale = Vector2(0.18, 0.18)
 texture = ExtResource("2_3g00j")
 script = ExtResource("1_5l5l5")
+AA = ExtResource("3_o16cg")
+BA = ExtResource("4_tgb30")
+CA = ExtResource("5_hryag")
+DA = ExtResource("6_67gx2")
+DB = ExtResource("7_bsku1")
 EA = ExtResource("2_3g00j")
 EB = ExtResource("3_2tkx6")
+FA = ExtResource("9_0m08n")
+GA = ExtResource("10_agb74")
+GB = ExtResource("11_46b7g")
+HA = ExtResource("12_oxlpo")
 dardo = ExtResource("4_n4qlo")
