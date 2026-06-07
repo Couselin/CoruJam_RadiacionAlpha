@@ -109,7 +109,7 @@ size_flags_vertical = 3
 script = ExtResource("10_7e4ef")
 MainScene = NodePath("../..")
 SpawnPos = NodePath("../../SpawnPosition")
-scrollItems = [NodePath("Madera"), NodePath("Fuego"), NodePath("Agua"), NodePath("Piedra"), NodePath("Martillo"), NodePath("Ceniza"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+scrollItems = [NodePath("Madera"), NodePath("Fuego"), NodePath("Agua"), NodePath("Piedra"), NodePath("Martillo"), NodePath("Ceniza"), NodePath("Cuchillo"), NodePath("Carbon"), NodePath("Lapiz"), NodePath("Papel"), NodePath("Arena"), NodePath("Cristal"), NodePath("Vaso"), NodePath("VasoAgua"), NodePath("Moneda"), NodePath("Cojin"), NodePath("Tela"), NodePath("Metal"), NodePath("Polvora"), NodePath("Libreta"), NodePath("MezclaSospechosa"), NodePath("Arcilla"), NodePath("Vasija"), NodePath("Lingote"), NodePath("Cemento"), NodePath("RelojDeArena"), NodePath("Urna"), NodePath("Dibujo"), NodePath("Ventana"), NodePath("KitDeDibujo"), NodePath("Gafas"), NodePath("Pistola"), NodePath("BombaDeHumo")]
 
 [node name="Madera" parent="ScrollContainer01/VBoxContainer01" unique_id=388118148 instance=ExtResource("11_tqapp")]
 layout_mode = 2
