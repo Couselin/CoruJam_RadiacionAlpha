@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c3s04y3dfocmy"]
+
+[ext_resource type="Script" uid="uid://dpsnw44gtm3ye" path="res://01_assets/01_ui/v_box_container.gd" id="1_1iimp"]
+[ext_resource type="Texture2D" uid="uid://dn1t6ji1lf2lg" path="res://01_assets/00_items/sprites/paceholders/cubo.png" id="2_8is5t"]
+[ext_resource type="Texture2D" uid="uid://hnhhtkccqo4j" path="res://01_assets/00_items/sprites/paceholders/azul.png" id="2_yklyq"]
+[ext_resource type="Texture2D" uid="uid://bwx3uwu38qcm8" path="res://01_assets/00_items/sprites/paceholders/naranja.png" id="3_u51iq"]
+
+[node name="Control" type="Control" unique_id=1125863868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=264537945]
+layout_mode = 0
+offset_right = 597.0
+offset_bottom = 448.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=771674712]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource("1_1iimp")
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer" unique_id=326395983]
+layout_mode = 2
+texture = ExtResource("2_8is5t")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/VBoxContainer" unique_id=708248519]
+layout_mode = 2
+texture = ExtResource("2_yklyq")
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/VBoxContainer" unique_id=1908036990]
+layout_mode = 2
+texture = ExtResource("3_u51iq")

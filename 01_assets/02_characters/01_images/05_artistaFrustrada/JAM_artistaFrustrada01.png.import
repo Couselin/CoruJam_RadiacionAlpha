@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn1t6ji1lf2lg"
-path="res://.godot/imported/cubo.png-54595acf5a8c98341834b0791de3e74e.ctex"
+uid="uid://dxt0gmnu6ltun"
+path="res://.godot/imported/JAM_artistaFrustrada01.png-b29dba60efcde1ea8dbe7056ad9ba2f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/cubo.png"
-dest_files=["res://.godot/imported/cubo.png-54595acf5a8c98341834b0791de3e74e.ctex"]
+source_file="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada01.png"
+dest_files=["res://.godot/imported/JAM_artistaFrustrada01.png-b29dba60efcde1ea8dbe7056ad9ba2f5.ctex"]
 
 [params]
 

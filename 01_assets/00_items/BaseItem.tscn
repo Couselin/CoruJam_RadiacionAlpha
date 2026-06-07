@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvltfdm3txtlc"]
 
-[ext_resource type="Texture2D" uid="uid://dn1t6ji1lf2lg" path="res://01_assets/00_items/sprites/paceholders/cubo.png" id="1_0w65g"]
+[ext_resource type="Texture2D" uid="uid://dn1t6ji1lf2lg" path="res://01_assets/00_items/sprites/99_paceholders/cubo.png" id="1_0w65g"]
 [ext_resource type="Script" uid="uid://clegosvnagx5r" path="res://01_assets/00_items/base_item.gd" id="2_n24wn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n24wn"]
@@ -9,10 +9,12 @@ size = Vector2(250, 250)
 [sub_resource type="LabelSettings" id="LabelSettings_n24wn"]
 font_size = 41
 
-[node name="Sprite2D" type="Sprite2D" unique_id=984014417]
+[node name="Node2D" type="Node2D" unique_id=1205351558]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_0w65g")
 script = ExtResource("2_n24wn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1523409278]
+texture = ExtResource("1_0w65g")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=498225321]
 

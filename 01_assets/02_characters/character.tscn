@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxqp4anx7n834"]
+
+[ext_resource type="Script" uid="uid://bqvys1me2jixx" path="res://01_assets/02_characters/character.gd" id="1_5l5l5"]
+[ext_resource type="Texture2D" uid="uid://dxt0gmnu6ltun" path="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada01.png" id="2_3g00j"]
+[ext_resource type="Texture2D" uid="uid://bps1x8egawabo" path="res://01_assets/02_characters/01_images/05_artistaFrustrada/JAM_artistaFrustrada02.png" id="3_2tkx6"]
+[ext_resource type="Texture2D" uid="uid://c0a4s6kwuf3qj" path="res://01_assets/00_items/sprites/99_paceholders/dardo.jpeg" id="4_n4qlo"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=435411583]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("2_3g00j")
+script = ExtResource("1_5l5l5")
+EA = ExtResource("2_3g00j")
+EB = ExtResource("3_2tkx6")
+dardo = ExtResource("4_n4qlo")

@@ -1,36 +1,75 @@
 [gd_scene format=3 uid="uid://g38b6kn20ffu"]
 
 [ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
-[ext_resource type="Texture2D" uid="uid://b8v8mjay1hkij" path="res://01_assets/00_items/sprites/paceholders/amarillo.png" id="1_26b2s"]
-[ext_resource type="Texture2D" uid="uid://hnhhtkccqo4j" path="res://01_assets/00_items/sprites/paceholders/azul.png" id="2_7rbd1"]
+[ext_resource type="Texture2D" uid="uid://cid3s54avsqd0" path="res://01_assets/01_ui/JAM_UI01_placeholder1.png" id="2_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
-[ext_resource type="PackedScene" uid="uid://bvltfdm3txtlc" path="res://01_assets/00_items/BaseItem.tscn" id="3_5ep5v"]
-[ext_resource type="Texture2D" uid="uid://jd3nbfykoftj" path="res://01_assets/00_items/sprites/paceholders/rojo.png" id="3_b7ysp"]
+[ext_resource type="PackedScene" uid="uid://d2masijdykeuq" path="res://01_assets/00_items/itemsPrueba/itemAmarillo.tscn" id="4_b7ysp"]
+[ext_resource type="PackedScene" uid="uid://cpk1gg770cr2c" path="res://01_assets/00_items/itemsPrueba/itemAzul.tscn" id="5_t6w3n"]
+[ext_resource type="PackedScene" uid="uid://cawo6ubjilmhu" path="res://01_assets/00_items/itemsPrueba/itemRojo.tscn" id="6_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://cxqp4anx7n834" path="res://01_assets/02_characters/character.tscn" id="8_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://blwq1leesr3rq" path="res://01_assets/03_dialogos/Dialogue.tscn" id="9_eltik"]
+[ext_resource type="Script" uid="uid://dstouxgkuonjt" path="res://01_assets/01_ui/v_box_container_01.gd" id="10_156vq"]
 
-[node name="Node2D" type="Node2D" unique_id=815484022]
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "character", "cajaDialogos")]
 script = ExtResource("1_7rbd1")
+DeliverySlot = NodePath("DeliverySlot")
+character = NodePath("Character")
+cajaDialogos = NodePath("Control")
+
+[node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_mpmdo")
+centered = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1083897180]
 anchor_mode = 0
 
 [node name="Slot01" parent="." unique_id=1568521583 instance=ExtResource("2_t6w3n")]
-position = Vector2(147, 195)
+position = Vector2(67, 296.69)
+scale = Vector2(0.3, 0.3)
 
 [node name="Slot02" parent="." unique_id=1704264881 instance=ExtResource("2_t6w3n")]
-position = Vector2(146, 366)
+position = Vector2(67, 439.465)
+scale = Vector2(0.3, 0.3)
 
-[node name="Amarillo" parent="." unique_id=984014417 instance=ExtResource("3_5ep5v")]
-position = Vector2(396, 200)
-texture = ExtResource("1_26b2s")
+[node name="DeliverySlot" parent="." unique_id=171514903 instance=ExtResource("2_t6w3n")]
+position = Vector2(1055, 63)
+scale = Vector2(0.75, 0.5)
 
-[node name="Rojo" parent="." unique_id=1791466818 instance=ExtResource("3_5ep5v")]
-position = Vector2(501, 200)
-texture = ExtResource("3_b7ysp")
+[node name="ResultSlot" parent="." unique_id=2036309795 node_paths=PackedStringArray("Slot01", "Slot02", "mainScene") instance=ExtResource("7_mpmdo")]
+position = Vector2(67, 581)
+scale = Vector2(0.3, 0.3)
+Slot01 = NodePath("../Slot01")
+Slot02 = NodePath("../Slot02")
+mainScene = NodePath("..")
 
-[node name="Azul" parent="." unique_id=1651230448 instance=ExtResource("3_5ep5v")]
-position = Vector2(603, 200)
-texture = ExtResource("2_7rbd1")
+[node name="amarillo" parent="." unique_id=1205351558 instance=ExtResource("4_b7ysp")]
+position = Vector2(385, 317)
 
-[node name="ResultSlot" parent="." unique_id=2036309795 instance=ExtResource("7_mpmdo")]
-position = Vector2(148, 550)
+[node name="azul" parent="." unique_id=1512355472 instance=ExtResource("5_t6w3n")]
+position = Vector2(533, 386)
+
+[node name="rojo" parent="." unique_id=268196808 instance=ExtResource("6_mpmdo")]
+position = Vector2(708, 356)
+
+[node name="Character" parent="." unique_id=435411583 instance=ExtResource("8_mpmdo")]
+position = Vector2(93, 100)
+
+[node name="Control" parent="." unique_id=1773824511 instance=ExtResource("9_eltik")]
+offset_left = 300.0
+offset_top = 21.98
+offset_right = 877.0
+offset_bottom = 121.979996
+
+[node name="ScrollContainer01" type="ScrollContainer" parent="." unique_id=1940391800]
+offset_left = 1042.0
+offset_top = 169.0
+offset_right = 1149.0
+offset_bottom = 638.0
+
+[node name="VBoxContainer01" type="VBoxContainer" parent="ScrollContainer01" unique_id=354074846]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("10_156vq")

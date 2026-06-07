@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwx3uwu38qcm8"
-path="res://.godot/imported/naranja.png-f8fac142f916ec1798498f7c4b3851b7.ctex"
+uid="uid://cuqqo7uawggh3"
+path="res://.godot/imported/morado.png-a4c4766467d31f695ffb01f13e94b1fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/00_items/sprites/paceholders/naranja.png"
-dest_files=["res://.godot/imported/naranja.png-f8fac142f916ec1798498f7c4b3851b7.ctex"]
+source_file="res://01_assets/00_items/sprites/99_paceholders/morado.png"
+dest_files=["res://.godot/imported/morado.png-a4c4766467d31f695ffb01f13e94b1fa.ctex"]
 
 [params]
 
