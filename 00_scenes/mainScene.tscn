@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
 [ext_resource type="Texture2D" uid="uid://cgvshmlibasbs" path="res://01_assets/01_ui/03_images/JAM_st_backgroundBW.png" id="2_r7qdu"]
 [ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
-[ext_resource type="Texture2D" uid="uid://cgjiwhbxo3ow0" path="res://01_assets/02_characters/01_images/01_señorSonriente/JAM_señorSonriente01.png" id="4_7t52q"]
+[ext_resource type="Texture2D" uid="uid://cgjiwhbxo3ow0" path="res://01_assets/02_characters/01_images/01_señorSonriente/JAM_señorSonriente01.png" id="4_rjkk0"]
 [ext_resource type="Texture2D" uid="uid://k1n4q43xk0xk" path="res://01_assets/01_ui/03_images/JAM_st_backgroundFW.png" id="5_f6eme"]
 [ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
 [ext_resource type="PackedScene" uid="uid://cxqp4anx7n834" path="res://01_assets/02_characters/character.tscn" id="8_mpmdo"]
@@ -40,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://06wuyx4y1v13" path="res://01_assets/00_items/sprites/JAM_pr_urn.png" id="43_7t52q"]
 [ext_resource type="Texture2D" uid="uid://88n3dmjn2ic4" path="res://01_assets/00_items/sprites/JAM_pr_drawing.png" id="44_rjkk0"]
 [ext_resource type="Texture2D" uid="uid://d0xrrlxww4oin" path="res://01_assets/00_items/sprites/JAM_pr_window.png" id="45_b6g67"]
+[ext_resource type="PackedScene" uid="uid://cfx7lioqbj4kg" path="res://01_assets/01_ui/trash.tscn" id="45_rjkk0"]
 [ext_resource type="Texture2D" uid="uid://dgrbc3ln6oxrs" path="res://01_assets/00_items/sprites/JAM_pr_artKit.png" id="46_aoo7n"]
 [ext_resource type="Texture2D" uid="uid://5q0l2vbdyuot" path="res://01_assets/00_items/sprites/JAM_pr_glasses.png" id="47_57i87"]
 [ext_resource type="Texture2D" uid="uid://d1skbylhbiqdq" path="res://01_assets/00_items/sprites/JAM_pr_gun.png" id="48_w311d"]
@@ -59,9 +60,9 @@ texture = ExtResource("2_r7qdu")
 centered = false
 
 [node name="Character" parent="." unique_id=435411583 instance=ExtResource("8_mpmdo")]
-position = Vector2(91.19751, 92.80249)
+position = Vector2(91.00001, 95)
 scale = Vector2(0.18202636, 0.18202636)
-texture = ExtResource("4_7t52q")
+texture = ExtResource("4_rjkk0")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=927637784]
 scale = Vector2(0.6, 0.6)
@@ -101,6 +102,7 @@ offset_left = 1042.0
 offset_top = 169.0
 offset_right = 1137.0
 offset_bottom = 638.0
+scale = Vector2(1.0205804, 1.0245295)
 
 [node name="VBoxContainer01" type="VBoxContainer" parent="ScrollContainer01" unique_id=354074846 node_paths=PackedStringArray("MainScene", "SpawnPos", "scrollItems")]
 layout_mode = 2
@@ -109,7 +111,7 @@ size_flags_vertical = 3
 script = ExtResource("10_7e4ef")
 MainScene = NodePath("../..")
 SpawnPos = NodePath("../../SpawnPosition")
-scrollItems = [NodePath("Madera"), NodePath("Fuego"), NodePath("Agua"), NodePath("Piedra"), NodePath("Martillo"), NodePath("Ceniza"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+scrollItems = [NodePath("Madera"), NodePath("Fuego"), NodePath("Agua"), NodePath("Piedra"), NodePath("Martillo"), NodePath("Ceniza"), NodePath("Cuchillo"), NodePath("Carbon"), NodePath("Lapiz"), NodePath("Papel"), NodePath("Arena"), NodePath("Cristal"), NodePath("Vaso"), NodePath("VasoAgua"), NodePath("Moneda"), NodePath("Cojin"), NodePath("Tela"), NodePath("Metal"), NodePath("Polvora"), NodePath("Libreta"), NodePath("MezclaSospechosa"), NodePath("Arcilla"), NodePath("Vasija"), NodePath("Lingote"), NodePath("Cemento"), NodePath("RelojDeArena"), NodePath("Urna"), NodePath("Dibujo"), NodePath("Ventana"), NodePath("KitDeDibujo"), NodePath("Gafas"), NodePath("Pistola"), NodePath("BombaDeHumo")]
 
 [node name="Madera" parent="ScrollContainer01/VBoxContainer01" unique_id=388118148 instance=ExtResource("11_tqapp")]
 layout_mode = 2
@@ -170,6 +172,7 @@ Texto = "Lápiz"
 
 [node name="Papel" parent="ScrollContainer01/VBoxContainer01" unique_id=1855506553 instance=ExtResource("11_tqapp")]
 layout_mode = 2
+Unlocked = true
 Directorio = "res://01_assets/00_items/ITEMSFINALES/paper.tscn"
 ItemImage = ExtResource("26_k8lr1")
 Texto = "Papel"
@@ -194,6 +197,7 @@ Texto = "Vaso"
 
 [node name="VasoAgua" parent="ScrollContainer01/VBoxContainer01" unique_id=788286515 instance=ExtResource("11_tqapp")]
 layout_mode = 2
+Unlocked = true
 Directorio = "res://01_assets/00_items/ITEMSFINALES/waterglass.tscn"
 ItemImage = ExtResource("30_bixpr")
 Texto = "Vaso con agua"
@@ -224,6 +228,7 @@ Texto = "Metal"
 
 [node name="Polvora" parent="ScrollContainer01/VBoxContainer01" unique_id=30485682 instance=ExtResource("11_tqapp")]
 layout_mode = 2
+Unlocked = true
 Directorio = "res://01_assets/00_items/ITEMSFINALES/gunPowder.tscn"
 ItemImage = ExtResource("35_g0t2l")
 Texto = "Pólvora"
@@ -284,12 +289,14 @@ Texto = "Dibujo"
 
 [node name="Ventana" parent="ScrollContainer01/VBoxContainer01" unique_id=1522838567 instance=ExtResource("11_tqapp")]
 layout_mode = 2
+Unlocked = true
 Directorio = "res://01_assets/00_items/ITEMSFINALES/window.tscn"
 ItemImage = ExtResource("45_b6g67")
 Texto = "Ventana"
 
 [node name="KitDeDibujo" parent="ScrollContainer01/VBoxContainer01" unique_id=192184115 instance=ExtResource("11_tqapp")]
 layout_mode = 2
+Unlocked = true
 Directorio = "res://01_assets/00_items/ITEMSFINALES/artKit.tscn"
 ItemImage = ExtResource("46_aoo7n")
 Texto = "Kit de dibujo"
@@ -319,3 +326,6 @@ position = Vector2(599, 300)
 stream = ExtResource("15_i8105")
 autoplay = true
 bus = &"Musica"
+
+[node name="Sprite2D2" parent="." unique_id=173330931 instance=ExtResource("45_rjkk0")]
+position = Vector2(910.99994, 567.99994)

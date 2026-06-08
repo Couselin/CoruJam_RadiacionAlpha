@@ -5,4 +5,5 @@
 [resource]
 font = ExtResource("1_vwl4b")
 font_size = 64
-font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+font_color = Color(0.58431375, 0, 0.13333334, 1)
+outline_size = 6

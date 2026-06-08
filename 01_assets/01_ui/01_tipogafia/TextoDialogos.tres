@@ -1,8 +1,9 @@
-[gd_resource type="LabelSettings" format=3 uid="uid://cn7ww6k6nuif1"]
+[gd_resource type="LabelSettings" format=3 uid="uid://c4j8djbkn4tii"]
 
-[ext_resource type="FontFile" uid="uid://bomog6cjkvfym" path="res://01_assets/03_dialogos/01_labels/Enchanted Land.otf" id="1_i8hh2"]
+[ext_resource type="FontFile" uid="uid://ba32be66rjhkh" path="res://01_assets/03_dialogos/01_labels/Augusta.ttf" id="1_i8hh2"]
 
 [resource]
+line_spacing = -6.7
 font = ExtResource("1_i8hh2")
-font_size = 19
-font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+font_size = 18
+font_color = Color(0.3801536, 0.16248727, 0.065339915, 1)

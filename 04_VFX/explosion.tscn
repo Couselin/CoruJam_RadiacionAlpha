@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bi3m8pf4mr385"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_abc4v"]
-blend_mode = 1
 
 [sub_resource type="Gradient" id="Gradient_mjyrc"]
 offsets = PackedFloat32Array(0, 0.16880342, 0.99786323)
@@ -19,8 +18,8 @@ point_count = 3
 curve = SubResource("Curve_sdcnf")
 
 [sub_resource type="Curve" id="Curve_cnkxv"]
-_limits = [0.0, 2.5, 0.0, 1.0]
-_data = [Vector2(0, 2.5), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+_limits = [0.0, 5.0, 0.0, 1.0]
+_data = [Vector2(0, 3.8400257), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_3nvxs"]
@@ -37,8 +36,12 @@ gravity = Vector3(0, 0, 0)
 linear_accel_min = 9.999997
 linear_accel_max = 99.99999
 linear_accel_curve = SubResource("CurveTexture_mhujl")
+scale_min = 7.0
+scale_max = 7.0
 scale_curve = SubResource("CurveTexture_3nvxs")
 color_ramp = SubResource("GradientTexture1D_5ypvl")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mjyrc"]
 
 [sub_resource type="Gradient" id="Gradient_abc4v"]
 offsets = PackedFloat32Array(0.009868421, 0.39802632, 0.6940789, 0.9572368)
@@ -74,22 +77,87 @@ gravity = Vector3(0, 150, 0)
 linear_accel_min = 39.999996
 linear_accel_max = 99.99999
 linear_accel_curve = SubResource("CurveTexture_6t10y")
-scale_min = 0.0
-scale_max = 2.5
+scale_min = 4.0
+scale_max = 7.5
 scale_curve = SubResource("CurveTexture_6wkup")
 color_ramp = SubResource("GradientTexture1D_mjyrc")
 
+[sub_resource type="Gradient" id="Gradient_5ypvl"]
+offsets = PackedFloat32Array(0.22706422, 1)
+colors = PackedColorArray(0.6666667, 0.6666667, 0.6666667, 0.8627451, 0.26666668, 0.26666668, 0.26666668, 0.1764706)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sdcnf"]
+gradient = SubResource("Gradient_5ypvl")
+
+[sub_resource type="Curve" id="Curve_5ypvl"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0.015936255, 12.196594), 0.0, 0.0, 0, 0, Vector2(1, -24.748352), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_sdcnf"]
+curve = SubResource("Curve_5ypvl")
+
+[sub_resource type="Curve" id="Curve_mhujl"]
+_limits = [0.9902231, 1024.0, 0.0, 1.0]
+_data = [Vector2(0, 0.9902231), 0.0, 0.0, 0, 0, Vector2(1, 5), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_cnkxv"]
+curve = SubResource("Curve_mhujl")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3nvxs"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 0.01
+spread = 180.0
+initial_velocity_max = 40.52
+orbit_velocity_min = 9.49949e-08
+orbit_velocity_max = 0.1500001
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 30.329998
+linear_accel_max = 99.99999
+linear_accel_curve = SubResource("CurveTexture_sdcnf")
+scale_min = 6.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_cnkxv")
+color_ramp = SubResource("GradientTexture1D_sdcnf")
+
 [node name="Explosion" type="Node2D" unique_id=1431843519]
+position = Vector2(560, 320)
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=775402178]
 material = SubResource("CanvasItemMaterial_abc4v")
-amount = 200
+scale = Vector2(11.68, 8.805)
+amount = 400
 lifetime = 0.5
 explosiveness = 0.5
 process_material = SubResource("ParticleProcessMaterial_abc4v")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="GPUParticles2D" unique_id=1347153636]
+material = SubResource("CanvasItemMaterial_mjyrc")
 amount = 10
 lifetime = 0.5
 explosiveness = 0.8
 process_material = SubResource("ParticleProcessMaterial_yb6qj")
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="GPUParticles2D" unique_id=1170391227]
+show_behind_parent = true
+scale = Vector2(1.7127306, 1.5739757)
+amount = 500
+lifetime = 0.8
+speed_scale = 2.0
+explosiveness = 0.8
+collision_base_size = 0.0
+process_material = SubResource("ParticleProcessMaterial_3nvxs")
+
+[node name="GPUParticles2D3" type="GPUParticles2D" parent="GPUParticles2D" unique_id=1484925285]
+self_modulate = Color(1, 1, 1, 0.05882353)
+show_behind_parent = true
+z_index = 1
+scale = Vector2(1.095, 0.715)
+amount = 500
+lifetime = 0.8
+speed_scale = 2.0
+explosiveness = 0.8
+collision_base_size = 0.0
+process_material = SubResource("ParticleProcessMaterial_3nvxs")
