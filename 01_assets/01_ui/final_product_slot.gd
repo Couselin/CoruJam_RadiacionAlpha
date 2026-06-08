@@ -6,6 +6,7 @@ class_name ResultSlot
 @export var Slot02: BasicSlot
 @export var result: Item 
 @export var mainScene: Node2D
+var explosion: Node2D
 
 signal nuevoItem
 # BEGIN PLAY
@@ -116,18 +117,20 @@ func checkForCombine():
 			result.global_position = global_position
 			emit_signal("nuevoItem")
 		elif (Slot01.ItemReference.ItemID == 18 and Slot02.ItemReference.ItemID == 1)or(Slot01.ItemReference.ItemID == 1 and Slot02.ItemReference.ItemID == 18):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 19 and Slot02.ItemReference.ItemID == 1)or(Slot01.ItemReference.ItemID == 1 and Slot02.ItemReference.ItemID == 19):
 			result= preload("res://01_assets/00_items/ITEMSFINALES/ash.tscn").instantiate()
 			mainScene.add_child(result)
 			result.global_position = global_position
 			emit_signal("nuevoItem")
 		elif (Slot01.ItemReference.ItemID == 0 and Slot02.ItemReference.ItemID == 1)or(Slot01.ItemReference.ItemID == 1 and Slot02.ItemReference.ItemID == 0):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 5 and Slot02.ItemReference.ItemID == 2)or(Slot01.ItemReference.ItemID == 2 and Slot02.ItemReference.ItemID == 5):
 			result= preload("res://01_assets/00_items/ITEMSFINALES/concrete.tscn").instantiate()
 			mainScene.add_child(result)
@@ -164,13 +167,15 @@ func checkForCombine():
 			result.global_position = global_position
 			emit_signal("nuevoItem")
 		elif (Slot01.ItemReference.ItemID == 18 and Slot02.ItemReference.ItemID == 3)or(Slot01.ItemReference.ItemID == 3 and Slot02.ItemReference.ItemID == 18):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 20 and Slot02.ItemReference.ItemID == 3)or(Slot01.ItemReference.ItemID == 3 and Slot02.ItemReference.ItemID == 20):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 10 and Slot02.ItemReference.ItemID == 4)or(Slot01.ItemReference.ItemID == 4 and Slot02.ItemReference.ItemID == 10):
 			result= preload("res://01_assets/00_items/ITEMSFINALES/stone.tscn").instantiate()
 			mainScene.add_child(result)
@@ -197,14 +202,15 @@ func checkForCombine():
 			result.global_position = global_position
 			emit_signal("nuevoItem")
 		elif (Slot01.ItemReference.ItemID == 18 and Slot02.ItemReference.ItemID == 4)or(Slot01.ItemReference.ItemID == 4 and Slot02.ItemReference.ItemID == 18):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 20 and Slot02.ItemReference.ItemID == 4)or(Slot01.ItemReference.ItemID == 4 and Slot02.ItemReference.ItemID == 20):
-			result= preload("res://04_VFX/explosion.tscn").instantiate()
-			mainScene.add_child(result)
-			result.global_position = global_position
-			emit_signal("nuevoItem")
+			explosion=preload("res://04_VFX/explosion.tscn").instantiate()
+			mainScene.add_child(explosion)
+			await get_tree().create_timer(1).timeout
+			explosion.queue_free()
 		elif (Slot01.ItemReference.ItemID == 9 and Slot02.ItemReference.ItemID == 5)or(Slot01.ItemReference.ItemID == 5 and Slot02.ItemReference.ItemID == 9):
 			result= preload("res://01_assets/00_items/ITEMSFINALES/drawing.tscn").instantiate()
 			mainScene.add_child(result)

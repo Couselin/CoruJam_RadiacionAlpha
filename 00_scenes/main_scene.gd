@@ -9,6 +9,7 @@ var explosion: Node2D
 @export var cajaDialogos: DialogoBasic
 @export var dialogueNumber: int = 1
 @export var scrollbar: MyScrollBar
+@export var Victory: Sprite2D
 
 # BEGIN PLAY
 func _ready() -> void:
@@ -129,7 +130,8 @@ func checkDelivery():
 				explosion = load("res://04_VFX/explosion.tscn").instantiate()
 				add_child(explosion)
 				await get_tree().create_timer(1).timeout
-				
+				explosion.queue_free()
+				Victory.texture= load("res://01_assets/01_ui/03_images/victoria.png")
 			else:
 				cajaDialogos.cambiarDialogo("¿Eh? ¿Qué es esto? ¡Dejaos de sandeces y entregaos ahora mismo!")
 				cajaDialogos.animate_label()

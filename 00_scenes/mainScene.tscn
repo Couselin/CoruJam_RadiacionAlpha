@@ -46,13 +46,14 @@
 [ext_resource type="Texture2D" uid="uid://d1skbylhbiqdq" path="res://01_assets/00_items/sprites/JAM_pr_gun.png" id="48_w311d"]
 [ext_resource type="Texture2D" uid="uid://cgi4rmnud6bi3" path="res://01_assets/00_items/sprites/JAM_pr_bomb.png" id="49_h1oi0"]
 
-[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "ProductSlot", "character", "cajaDialogos", "scrollbar")]
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "ProductSlot", "character", "cajaDialogos", "scrollbar", "Victory")]
 script = ExtResource("1_7rbd1")
 DeliverySlot = NodePath("DeliverySlot")
 ProductSlot = NodePath("ResultSlot")
 character = NodePath("Character")
 cajaDialogos = NodePath("Control")
 scrollbar = NodePath("ScrollContainer01/VBoxContainer01")
+Victory = NodePath("victoria")
 
 [node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
 scale = Vector2(0.6, 0.6)
@@ -327,5 +328,7 @@ stream = ExtResource("15_i8105")
 autoplay = true
 bus = &"Musica"
 
-[node name="Sprite2D2" parent="." unique_id=173330931 instance=ExtResource("45_rjkk0")]
+[node name="Papelera" parent="." unique_id=173330931 instance=ExtResource("45_rjkk0")]
 position = Vector2(910.99994, 567.99994)
+
+[node name="victoria" type="Sprite2D" parent="." unique_id=141306606]
