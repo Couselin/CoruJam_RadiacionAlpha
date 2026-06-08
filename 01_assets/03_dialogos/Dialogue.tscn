@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://blwq1leesr3rq"]
 
 [ext_resource type="Script" uid="uid://wjx64atlqmox" path="res://01_assets/03_dialogos/dialogoBasic.gd" id="1_nux56"]
-[ext_resource type="LabelSettings" uid="uid://c4j8djbkn4tii" path="res://01_assets/01_ui/01_tipogafia/TextoNombre.tres" id="2_gs406"]
+[ext_resource type="LabelSettings" uid="uid://c4j8djbkn4tii" path="res://01_assets/01_ui/01_tipogafia/TextoDialogos.tres" id="2_gs406"]
+[ext_resource type="LabelSettings" uid="uid://cn7ww6k6nuif1" path="res://01_assets/01_ui/01_tipogafia/TextoNombres.tres" id="2_ke1xq"]
 
 [node name="Control" type="Control" unique_id=1773824511]
 layout_mode = 3
@@ -14,22 +15,22 @@ dialogo = "Hola me llamo antonio"
 
 [node name="LabelNombre" type="Label" parent="." unique_id=1254500273]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 33.0
-offset_bottom = 20.0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 55.0
+offset_bottom = 32.0
 text = "Nombre"
-label_settings = ExtResource("2_gs406")
+label_settings = ExtResource("2_ke1xq")
 
 [node name="LabelDialogo" type="Label" parent="." unique_id=69308976]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 26.0
-offset_right = 564.0
-offset_bottom = 101.0
+offset_left = 21.0
+offset_top = 28.0
+offset_right = 580.0
+offset_bottom = 122.0
 text = "¿Eh, hola? ¿Se encuentra alguien ahí? ¡Oh, buen señor, alabado sea! Mire, realmente preciso de su ayuda. Un enano muy alto me retó a mirar al sol, ¡ese canalla sabía que mi vista empeoraría y  robó todas mis manzas! Por favor, necesito algo que me ayude a ver mejor ¿Un hechizo pueda ser?"
 label_settings = ExtResource("2_gs406")
-autowrap_mode = 1
+autowrap_mode = 3
 
 [node name="Timer" type="Timer" parent="." unique_id=855158881]
 wait_time = 0.025

@@ -1,0 +1,332 @@
+[gd_scene format=3 uid="uid://g38b6kn20ffu"]
+
+[ext_resource type="Script" uid="uid://dbo7shk3umdpt" path="res://00_scenes/main_scene.gd" id="1_7rbd1"]
+[ext_resource type="Texture2D" uid="uid://cgvshmlibasbs" path="res://01_assets/01_ui/03_images/JAM_st_backgroundBW.png" id="2_r7qdu"]
+[ext_resource type="PackedScene" uid="uid://dn433y78jmcw7" path="res://01_assets/01_ui/BasicSlot.tscn" id="2_t6w3n"]
+[ext_resource type="Texture2D" uid="uid://caei10w3m4ki8" path="res://01_assets/02_characters/01_images/06_rumpell/JAM_rumpell01.png" id="4_rjkk0"]
+[ext_resource type="Texture2D" uid="uid://k1n4q43xk0xk" path="res://01_assets/01_ui/03_images/JAM_st_backgroundFW.png" id="5_f6eme"]
+[ext_resource type="PackedScene" uid="uid://dndcwbgn0q87a" path="res://01_assets/01_ui/FinalProductSlot.tscn" id="7_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://cxqp4anx7n834" path="res://01_assets/02_characters/character.tscn" id="8_mpmdo"]
+[ext_resource type="PackedScene" uid="uid://blwq1leesr3rq" path="res://01_assets/03_dialogos/Dialogue.tscn" id="9_eltik"]
+[ext_resource type="Script" uid="uid://d2sv8d3sssks0" path="res://00_scenes/container.gd" id="10_7e4ef"]
+[ext_resource type="PackedScene" uid="uid://pcij8btnfki" path="res://01_assets/00_items/ScrollItem.tscn" id="11_tqapp"]
+[ext_resource type="AudioStream" uid="uid://dpdnhiywijip5" path="res://02_music/JAM_music.mp3" id="15_i8105"]
+[ext_resource type="Texture2D" uid="uid://2slh68j58fgb" path="res://01_assets/00_items/sprites/JAM_pr_wood.png" id="15_uqc6f"]
+[ext_resource type="Texture2D" uid="uid://ceo6d0ctcihhx" path="res://01_assets/00_items/sprites/JAM_pr_fire.png" id="18_f6eme"]
+[ext_resource type="Texture2D" uid="uid://dmdhco314xyp1" path="res://01_assets/00_items/sprites/99_paceholders/JAM_pr_water.png" id="19_rrcvc"]
+[ext_resource type="Texture2D" uid="uid://cck31uakmltoy" path="res://01_assets/00_items/sprites/JAM_pr_stone.png" id="20_qv6y1"]
+[ext_resource type="Texture2D" uid="uid://qhv4ikbcn1td" path="res://01_assets/00_items/sprites/JAM_pr_hammer.png" id="21_lxgh1"]
+[ext_resource type="Texture2D" uid="uid://cxx8e3utyvaop" path="res://01_assets/00_items/sprites/JAM_pr_ash.png" id="22_ire0o"]
+[ext_resource type="Texture2D" uid="uid://6enxwhqbn5k5" path="res://01_assets/00_items/sprites/JAM_pr_knife.png" id="23_lxgh1"]
+[ext_resource type="Texture2D" uid="uid://cqw1wkovv5bmn" path="res://01_assets/00_items/sprites/JAM_pr_coal.png" id="24_ire0o"]
+[ext_resource type="Texture2D" uid="uid://122rw2gfwbae" path="res://01_assets/00_items/sprites/JAM_pr_pencil.png" id="25_5c6jm"]
+[ext_resource type="Texture2D" uid="uid://djm4xe4n1lfno" path="res://01_assets/00_items/sprites/JAM_pr_paper.png" id="26_k8lr1"]
+[ext_resource type="Texture2D" uid="uid://dcso5n1yyv5qh" path="res://01_assets/00_items/sprites/JAM_pr_sand.png" id="27_qyeds"]
+[ext_resource type="Texture2D" uid="uid://bj3knbsl0v8om" path="res://01_assets/00_items/sprites/JAM_pr_glass.png" id="28_r6xvt"]
+[ext_resource type="Texture2D" uid="uid://clxkdbknqojqf" path="res://01_assets/00_items/sprites/JAM_pr_cup.png" id="29_t88nt"]
+[ext_resource type="Texture2D" uid="uid://d0l2nlv4sstqb" path="res://01_assets/00_items/sprites/JAM_pr_waterGlass.png" id="30_bixpr"]
+[ext_resource type="Texture2D" uid="uid://byrds4gpam5wn" path="res://01_assets/00_items/sprites/JAM_pr_coin.png" id="31_bixpr"]
+[ext_resource type="Texture2D" uid="uid://vg68w78dwyic" path="res://01_assets/00_items/sprites/JAM_pr_pillow.png" id="32_biou7"]
+[ext_resource type="Texture2D" uid="uid://ce5l0rqc4rstc" path="res://01_assets/00_items/sprites/JAM_pr_cloth.png" id="33_ou7c6"]
+[ext_resource type="Texture2D" uid="uid://1rir6pxg6sum" path="res://01_assets/00_items/sprites/JAM_pr_steel.png" id="34_ou7c6"]
+[ext_resource type="Texture2D" uid="uid://d28oh71470aj5" path="res://01_assets/00_items/sprites/JAM_pr_gunpowder.png" id="35_g0t2l"]
+[ext_resource type="Texture2D" uid="uid://ci5hbtcwfuim1" path="res://01_assets/00_items/sprites/JAM_pr_book.png" id="36_fvl6w"]
+[ext_resource type="Texture2D" uid="uid://b8pamc6hxxq04" path="res://01_assets/00_items/sprites/JAM_pr_mysteriousPowder.png" id="37_y2cl8"]
+[ext_resource type="Texture2D" uid="uid://bbtly1uh7koga" path="res://01_assets/00_items/sprites/JAM_pr_clay.png" id="38_u8t7n"]
+[ext_resource type="Texture2D" uid="uid://buure8xuckdwe" path="res://01_assets/00_items/sprites/JAM_pr_vase.png" id="39_u8t7n"]
+[ext_resource type="Texture2D" uid="uid://di7c853bv1las" path="res://01_assets/00_items/sprites/JAM_pr_steelBar.png" id="40_6poib"]
+[ext_resource type="Texture2D" uid="uid://ct04kedh0rbb2" path="res://01_assets/00_items/sprites/JAM_pr_concrete.png" id="41_nlc0u"]
+[ext_resource type="Texture2D" uid="uid://100mc8vyhf5r" path="res://01_assets/00_items/sprites/JAM_pr_hourglass.png" id="42_7t52q"]
+[ext_resource type="Texture2D" uid="uid://06wuyx4y1v13" path="res://01_assets/00_items/sprites/JAM_pr_urn.png" id="43_7t52q"]
+[ext_resource type="Texture2D" uid="uid://88n3dmjn2ic4" path="res://01_assets/00_items/sprites/JAM_pr_drawing.png" id="44_rjkk0"]
+[ext_resource type="Texture2D" uid="uid://d0xrrlxww4oin" path="res://01_assets/00_items/sprites/JAM_pr_window.png" id="45_b6g67"]
+[ext_resource type="PackedScene" uid="uid://cfx7lioqbj4kg" path="res://01_assets/01_ui/trash.tscn" id="45_rjkk0"]
+[ext_resource type="Texture2D" uid="uid://dgrbc3ln6oxrs" path="res://01_assets/00_items/sprites/JAM_pr_artKit.png" id="46_aoo7n"]
+[ext_resource type="Texture2D" uid="uid://5q0l2vbdyuot" path="res://01_assets/00_items/sprites/JAM_pr_glasses.png" id="47_57i87"]
+[ext_resource type="Texture2D" uid="uid://d1skbylhbiqdq" path="res://01_assets/00_items/sprites/JAM_pr_gun.png" id="48_w311d"]
+[ext_resource type="Texture2D" uid="uid://cgi4rmnud6bi3" path="res://01_assets/00_items/sprites/JAM_pr_bomb.png" id="49_h1oi0"]
+
+[node name="Node2D" type="Node2D" unique_id=815484022 node_paths=PackedStringArray("DeliverySlot", "ProductSlot", "character", "cajaDialogos", "scrollbar")]
+script = ExtResource("1_7rbd1")
+DeliverySlot = NodePath("DeliverySlot")
+ProductSlot = NodePath("ResultSlot")
+character = NodePath("Character")
+cajaDialogos = NodePath("Control")
+scrollbar = NodePath("ScrollContainer01/VBoxContainer01")
+
+[node name="interfaceImage" type="Sprite2D" parent="." unique_id=385981431]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_r7qdu")
+centered = false
+
+[node name="Character" parent="." unique_id=435411583 instance=ExtResource("8_mpmdo")]
+position = Vector2(91.19751, 92.80249)
+scale = Vector2(0.18202636, 0.18202636)
+texture = ExtResource("4_rjkk0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=927637784]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_f6eme")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1083897180]
+anchor_mode = 0
+
+[node name="Slot01" parent="." unique_id=1568521583 instance=ExtResource("2_t6w3n")]
+position = Vector2(67, 296.69)
+scale = Vector2(0.3, 0.3)
+
+[node name="Slot02" parent="." unique_id=1704264881 instance=ExtResource("2_t6w3n")]
+position = Vector2(67, 439.465)
+scale = Vector2(0.3, 0.3)
+
+[node name="DeliverySlot" parent="." unique_id=171514903 instance=ExtResource("2_t6w3n")]
+position = Vector2(1055, 63)
+scale = Vector2(0.75, 0.5)
+
+[node name="ResultSlot" parent="." unique_id=2036309795 node_paths=PackedStringArray("Slot01", "Slot02", "mainScene") instance=ExtResource("7_mpmdo")]
+position = Vector2(67, 581)
+scale = Vector2(0.3, 0.3)
+Slot01 = NodePath("../Slot01")
+Slot02 = NodePath("../Slot02")
+mainScene = NodePath("..")
+
+[node name="Control" parent="." unique_id=1773824511 instance=ExtResource("9_eltik")]
+offset_left = 299.0
+offset_top = 16.0
+offset_right = 876.0
+offset_bottom = 116.0
+
+[node name="ScrollContainer01" type="ScrollContainer" parent="." unique_id=1940391800]
+offset_left = 1042.0
+offset_top = 169.0
+offset_right = 1137.0
+offset_bottom = 638.0
+
+[node name="VBoxContainer01" type="VBoxContainer" parent="ScrollContainer01" unique_id=354074846 node_paths=PackedStringArray("MainScene", "SpawnPos", "scrollItems")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("10_7e4ef")
+MainScene = NodePath("../..")
+SpawnPos = NodePath("../../SpawnPosition")
+scrollItems = [NodePath("Madera"), NodePath("Fuego"), NodePath("Agua"), NodePath("Piedra"), NodePath("Martillo"), NodePath("Ceniza"), NodePath("Cuchillo"), NodePath("Carbon"), NodePath("Lapiz"), NodePath("Papel"), NodePath("Arena"), NodePath("Cristal"), NodePath("Vaso"), NodePath("VasoAgua"), NodePath("Moneda"), NodePath("Cojin"), NodePath("Tela"), NodePath("Metal"), NodePath("Polvora"), NodePath("Libreta"), NodePath("MezclaSospechosa"), NodePath("Arcilla"), NodePath("Vasija"), NodePath("Lingote"), NodePath("Cemento"), NodePath("RelojDeArena"), NodePath("Urna"), NodePath("Dibujo"), NodePath("Ventana"), NodePath("KitDeDibujo"), NodePath("Gafas"), NodePath("Pistola"), NodePath("BombaDeHumo")]
+
+[node name="Madera" parent="ScrollContainer01/VBoxContainer01" unique_id=388118148 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/wood.tscn"
+ItemImage = ExtResource("15_uqc6f")
+Texto = "Madera"
+
+[node name="Fuego" parent="ScrollContainer01/VBoxContainer01" unique_id=228094403 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/fire.tscn"
+ItemImage = ExtResource("18_f6eme")
+Texto = "Fuego"
+
+[node name="Agua" parent="ScrollContainer01/VBoxContainer01" unique_id=308848379 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/water.tscn"
+ItemImage = ExtResource("19_rrcvc")
+Texto = "Agua"
+
+[node name="Piedra" parent="ScrollContainer01/VBoxContainer01" unique_id=1908197764 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/stone.tscn"
+ItemImage = ExtResource("20_qv6y1")
+Texto = "Piedra"
+
+[node name="Martillo" parent="ScrollContainer01/VBoxContainer01" unique_id=1555555142 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/hammer.tscn"
+ItemImage = ExtResource("21_lxgh1")
+Texto = "Martillo"
+
+[node name="Ceniza" parent="ScrollContainer01/VBoxContainer01" unique_id=394816264 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/ash.tscn"
+ItemImage = ExtResource("22_ire0o")
+Texto = "Ceniza"
+
+[node name="Cuchillo" parent="ScrollContainer01/VBoxContainer01" unique_id=2075979666 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/knife.tscn"
+ItemImage = ExtResource("23_lxgh1")
+Texto = "Cuchillo"
+
+[node name="Carbon" parent="ScrollContainer01/VBoxContainer01" unique_id=701035612 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/coal.tscn"
+ItemImage = ExtResource("24_ire0o")
+Texto = "Carbón"
+
+[node name="Lapiz" parent="ScrollContainer01/VBoxContainer01" unique_id=933413122 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/pencil.tscn"
+ItemImage = ExtResource("25_5c6jm")
+Texto = "Lápiz"
+
+[node name="Papel" parent="ScrollContainer01/VBoxContainer01" unique_id=1855506553 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/paper.tscn"
+ItemImage = ExtResource("26_k8lr1")
+Texto = "Papel"
+
+[node name="Arena" parent="ScrollContainer01/VBoxContainer01" unique_id=293549554 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/arena.tscn"
+ItemImage = ExtResource("27_qyeds")
+Texto = "Arena"
+
+[node name="Cristal" parent="ScrollContainer01/VBoxContainer01" unique_id=1462810982 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/glass.tscn"
+ItemImage = ExtResource("28_r6xvt")
+Texto = "Cristal"
+
+[node name="Vaso" parent="ScrollContainer01/VBoxContainer01" unique_id=1921495152 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/cup.tscn"
+ItemImage = ExtResource("29_t88nt")
+Texto = "Vaso"
+
+[node name="VasoAgua" parent="ScrollContainer01/VBoxContainer01" unique_id=788286515 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/waterglass.tscn"
+ItemImage = ExtResource("30_bixpr")
+Texto = "Vaso con agua"
+
+[node name="Moneda" parent="ScrollContainer01/VBoxContainer01" unique_id=1369583225 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/coin.tscn"
+ItemImage = ExtResource("31_bixpr")
+Texto = "Moneda"
+
+[node name="Cojin" parent="ScrollContainer01/VBoxContainer01" unique_id=816600439 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/pillow.tscn"
+ItemImage = ExtResource("32_biou7")
+Texto = "Cojín"
+
+[node name="Tela" parent="ScrollContainer01/VBoxContainer01" unique_id=152335201 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/cloth.tscn"
+ItemImage = ExtResource("33_ou7c6")
+Texto = "Tela"
+
+[node name="Metal" parent="ScrollContainer01/VBoxContainer01" unique_id=1352644067 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/steel.tscn"
+ItemImage = ExtResource("34_ou7c6")
+Texto = "Metal"
+
+[node name="Polvora" parent="ScrollContainer01/VBoxContainer01" unique_id=30485682 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/gunPowder.tscn"
+ItemImage = ExtResource("35_g0t2l")
+Texto = "Pólvora"
+
+[node name="Libreta" parent="ScrollContainer01/VBoxContainer01" unique_id=1574080091 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/book.tscn"
+ItemImage = ExtResource("36_fvl6w")
+Texto = "Libreta"
+
+[node name="MezclaSospechosa" parent="ScrollContainer01/VBoxContainer01" unique_id=1794665251 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/mysteriousPowder.tscn"
+ItemImage = ExtResource("37_y2cl8")
+Texto = "Mezcla sospechosa"
+
+[node name="Arcilla" parent="ScrollContainer01/VBoxContainer01" unique_id=2078330328 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/clay.tscn"
+ItemImage = ExtResource("38_u8t7n")
+Texto = "Arcilla"
+
+[node name="Vasija" parent="ScrollContainer01/VBoxContainer01" unique_id=1962441374 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/vase.tscn"
+ItemImage = ExtResource("39_u8t7n")
+Texto = "Vasija"
+
+[node name="Lingote" parent="ScrollContainer01/VBoxContainer01" unique_id=1006863657 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/steelBar.tscn"
+ItemImage = ExtResource("40_6poib")
+Texto = "Vasija"
+
+[node name="Cemento" parent="ScrollContainer01/VBoxContainer01" unique_id=813931952 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/concrete.tscn"
+ItemImage = ExtResource("41_nlc0u")
+Texto = "Cemento"
+
+[node name="RelojDeArena" parent="ScrollContainer01/VBoxContainer01" unique_id=679334109 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/hourglass.tscn"
+ItemImage = ExtResource("42_7t52q")
+Texto = "Reloj de arena"
+
+[node name="Urna" parent="ScrollContainer01/VBoxContainer01" unique_id=2101274866 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/urn.tscn"
+ItemImage = ExtResource("43_7t52q")
+Texto = "Urna"
+
+[node name="Dibujo" parent="ScrollContainer01/VBoxContainer01" unique_id=981061825 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/drawing.tscn"
+ItemImage = ExtResource("44_rjkk0")
+Texto = "Dibujo"
+
+[node name="Ventana" parent="ScrollContainer01/VBoxContainer01" unique_id=1522838567 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/window.tscn"
+ItemImage = ExtResource("45_b6g67")
+Texto = "Ventana"
+
+[node name="KitDeDibujo" parent="ScrollContainer01/VBoxContainer01" unique_id=192184115 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Unlocked = true
+Directorio = "res://01_assets/00_items/ITEMSFINALES/artKit.tscn"
+ItemImage = ExtResource("46_aoo7n")
+Texto = "Kit de dibujo"
+
+[node name="Gafas" parent="ScrollContainer01/VBoxContainer01" unique_id=1397847341 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/glasses.tscn"
+ItemImage = ExtResource("47_57i87")
+Texto = "Gafas"
+
+[node name="Pistola" parent="ScrollContainer01/VBoxContainer01" unique_id=360461757 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/gun.tscn"
+ItemImage = ExtResource("48_w311d")
+Texto = "Pistola"
+
+[node name="BombaDeHumo" parent="ScrollContainer01/VBoxContainer01" unique_id=1563515246 instance=ExtResource("11_tqapp")]
+layout_mode = 2
+Directorio = "res://01_assets/00_items/ITEMSFINALES/bomb.tscn"
+ItemImage = ExtResource("49_h1oi0")
+Texto = "Bomba de humo"
+
+[node name="SpawnPosition" type="Node2D" parent="." unique_id=767719509]
+position = Vector2(599, 300)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1761846925]
+stream = ExtResource("15_i8105")
+autoplay = true
+bus = &"Musica"
+
+[node name="Sprite2D2" parent="." unique_id=173330931 instance=ExtResource("45_rjkk0")]
+position = Vector2(910.99994, 567.99994)
