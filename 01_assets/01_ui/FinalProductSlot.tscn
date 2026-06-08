@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://dndcwbgn0q87a"]
 
-[ext_resource type="Texture2D" uid="uid://c7rpcdo3lmk8i" path="res://01_assets/00_items/sprites/99_paceholders/slotResult.png" id="1_765tr"]
 [ext_resource type="Script" uid="uid://ckj20258vq33y" path="res://01_assets/01_ui/final_product_slot.gd" id="2_3wvr4"]
 
 [node name="Node2D" type="Node2D" unique_id=905596898]
@@ -9,4 +8,3 @@ script = ExtResource("2_3wvr4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=44366636]
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("1_765tr")

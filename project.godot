@@ -23,6 +23,13 @@ buses/default_bus_layout="uid://nu4a7r6a446a"
 
 GameInstance="*uid://bagqx2o68r02t"
 
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://by7as310xnax0"
+mouse_cursor/custom_image_hotspot=Vector2(50, 10)
+
 [input]
 
 Click={

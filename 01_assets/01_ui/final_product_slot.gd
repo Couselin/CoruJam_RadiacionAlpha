@@ -350,3 +350,5 @@ func checkForCombine():
 			mainScene.add_child(result)
 			result.global_position = global_position
 			emit_signal("nuevoItem")
+		else: 
+			pass

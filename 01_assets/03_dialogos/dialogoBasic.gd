@@ -9,7 +9,7 @@ class_name DialogoBasic
 @export var nombre: String = "null"
 @export var dialogo: String = "null"
 
-var n = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -24,6 +24,7 @@ func animate_label() -> void:
 	timerD.start()
 
 func cambiarDialogo(nuevoDialogo) -> void:
+	label_dialogo.set_visible_ratio(0)
 	label_dialogo.text = nuevoDialogo
 
 func cambiarNombre(nuevoNombre) -> void:
